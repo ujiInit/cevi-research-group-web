@@ -17,18 +17,22 @@ role-tables:
   - roles: [alum]
     width: 7
     image: false
-
 ---
 
 <div class="jumbotron">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="{{ site.base }}/img/logo-cevi-2@2x.png" alt="Logo CEVI" style="max-width: 250px; height: auto;">
+    </div>
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        El <b>Grupo de Investigación CEVI</b> (Computación Evolutiva y Visualización Interactiva) 
+        de la <b>Universitat Jaume I (UJI)</b> trabaja en el desarrollo de algoritmos evolutivos, 
+        visualización de datos, inteligencia artificial aplicada y optimización multicriterio. 
+        Nuestro objetivo es transferir conocimiento al sector industrial y generar impacto social.
     </p>
 </div>
 
 <section>
-    <h2>News</h2>
+    <h2>Noticias</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
             {% include news-item.html item=post %}
@@ -38,16 +42,16 @@ role-tables:
     {% if numposts >= 1 %}
         <p>
             <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+            <a href="{{ site.base }}/blog.html">Noticias anteriores&hellip;</a>
         </p>
     {% endif %}
 </section>
 
 <section>
-    <h2>Research</h2>
+    <h2>Líneas de investigación</h2>
     <div class="card-columns">
         {% comment %}
-        Sort the projects by date, putting those without dates last
+        Mostramos proyectos activos (status != "inactive")
         {% endcomment %}
         {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
         {% assign projects_by_date = projects_by_date | reverse %}
@@ -57,10 +61,13 @@ role-tables:
             {% endif %}
         {% endfor %}
     </div>
+    <p class="text-center">
+        <a href="{{ site.base }}/projects.html">Ver todas las líneas y proyectos &rarr;</a>
+    </p>
 </section>
 
 <div id="people">
-    <h2>People</h2>
+    <h2>Equipo</h2>
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
             {% for role-column in role-table %}
