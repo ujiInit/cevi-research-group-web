@@ -14,13 +14,9 @@
     </head>
     <body>
         <div class="container">
-            <!-- Header con logo y navegación -->
-            <div class="header d-flex
-                        flex-column
-                        flex-md-row justify-content-md-between">
-                <a href="{{ site.baseurl }}/" class="">
-                    <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png"
-                         alt="CEVI Logo" id="logo" style="height: 60px;">
+            <div class="header d-flex flex-column flex-md-row justify-content-md-between">
+                <a href="{{ site.baseurl }}/">
+                    <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" id="logo" style="height: 60px;">
                 </a>
                 <ul class="nav nav-pills justify-content-center">
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
@@ -34,20 +30,14 @@
                             {% assign maybe-active = 'active' %}
                         {% endif %}
                         <li class="nav-item">
-                            <a class="nav-link {{ maybe-active }}"
-                               href="{{ site.baseurl }}{{ item.link }}">
-                                {{ item.title }}
-                            </a>
+                            <a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}</a>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
 
             {% if page.image %}
-                <img src="{{ page.image }}"
-                     alt="{{ page.title }}"
-                     style="max-width: 400px"
-                     class="img-fluid mx-auto d-block mb-4"/>
+                <img src="{{ page.image }}" alt="{{ page.title }}" style="max-width: 400px" class="img-fluid mx-auto d-block mb-4"/>
             {% endif %}
 
             {% if page.notitle != true %}
@@ -62,10 +52,8 @@
                     <a href="https://www.uji.es/ciencies/">Departamento de Ciencias de la Computación</a>
                 </p>
             </div>
-        </div> <!-- /container -->
+        </div>
 
-        <!-- Support retina images. -->
-        <script type="text/javascript"
-                src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
     </body>
 </html>
