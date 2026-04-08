@@ -14,23 +14,25 @@
     </head>
     <body>
         <div class="container">
-            <div class="header d-flex flex-column flex-md-row justify-content-md-between">
-                <a href="{{ site.baseurl }}/">
+            <div class="header d-flex flex-column flex-md-row justify-content-md-between align-items-md-end">
+                <a href="{{ site.baseurl }}/" class="mb-2 mb-md-0">
                     <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" id="logo">
                 </a>
-                <ul class="nav nav-pills justify-content-center">
+                <ul class="nav nav-pills">
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
                     {% for item in site.navigation %}
                         {% assign itemshorturl = item.link | replace:'.html','' %}
                         {% assign maybe-active = '' %}
                         {% if item.title == 'Research' and page.layout == 'project' %}
-                            {% assign maybe-active = 'active' %}
+                             {% assign maybe-active = 'active' %}
                         {% endif %}
                         {% if itemshorturl == shorturl or is-research %}
                             {% assign maybe-active = 'active' %}
                         {% endif %}
                         <li class="nav-item">
-                            <a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}</a>
+                            <a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">
+                                {{ item.title }}
+                            </a>
                         </li>
                     {% endfor %}
                 </ul>

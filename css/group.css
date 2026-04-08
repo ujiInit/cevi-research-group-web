@@ -280,21 +280,3 @@ svg {
     background-color: #1976d2;
     border-color: #1976d2;
 }
-
-/* Alinear las pestañas de navegación con la parte inferior del logo */
-@media (min-width: 768px) {
-    .header {
-        display: flex;
-        align-items: flex-end;  /* Alinea los elementos hijos (logo y menú) por su parte inferior */
-    }
-    /* Eliminar márgenes inferiores no deseados */
-    .header a,
-    .header .nav-pills {
-        margin-bottom: 0;
-    }
-    /* Ajustar el padding de los items del menú para que queden perfectos */
-    .nav-pills .nav-link {
-        padding-top: 0;
-        padding-bottom: 0.5rem;  /* Ajusta este valor si quieres más o menos separación inferior */
-    }
-}
