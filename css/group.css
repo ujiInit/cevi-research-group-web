@@ -167,6 +167,17 @@ svg {
     color: #0a2b5e !important;
 }
 
+/* Separación extra para botones del hero */
+.hero-section .btn {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+}
+
+/* Asegurar que el contenedor de botones use gap amplio */
+.hero-section .d-flex {
+    gap: 2rem !important;
+}
+
 .feature-icon {
     display: inline-flex;
     align-items: center;
@@ -209,14 +220,16 @@ svg {
     position: relative;
     display: inline-block;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .section-title:after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 60px;
     height: 3px;
     background-color: #1976d2;
