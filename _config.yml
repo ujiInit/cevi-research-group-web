@@ -2,19 +2,19 @@
 title: "CEVI Research Group"
 name: "CEVI - Computación Evolutiva y Visualización Interactiva"
 description: "Grupo de investigación en algoritmos evolutivos, visualización de datos e IA aplicada de la Universitat Jaume I"
-url: "https://ujiInit.github.io"  # Cambiar por dominio personalizado si se adquiere
-baseurl: "/cevi-research-group-web"  # Importante para GitHub Pages (nombre del repositorio)
+url: "https://ujiInit.github.io"
+baseurl: "/cevi-research-group-web"
 
 # Exclude these files from the built site
 exclude: [bibble, README.md, Makefile, screenshot.png, Gemfile, Gemfile.lock]
 
-# Syntax highlighting (GitHub Pages usa rouge por defecto)
+# Syntax highlighting
 highlighter: rouge
 
 # Permalink structure for blog posts
 permalink: /blog/:year/:month/:day/:title.html
 
-# Sections on the "people" page (puedes traducir si prefieres)
+# Sections on the "people" page (en español)
 roles:
   - key: faculty
     name: Investigadores Principales
@@ -33,7 +33,7 @@ roles:
   - key: alum
     name: Alumni
 
-# Number of news stories to show on the front page
+# Number of news stories on the front page
 front_page_news: 5
 
 # Collections for projects
@@ -41,7 +41,7 @@ collections:
   projects:
     output: true
 
-# Navigation bar links (actualizado a español)
+# Navigation bar links (se usa en default.html)
 navigation:
   - title: Inicio
     link: /

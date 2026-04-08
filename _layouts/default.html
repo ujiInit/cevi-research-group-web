@@ -10,26 +10,22 @@
               crossorigin="anonymous">
         <link rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ site.base }}/css/group.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/group.css">
     </head>
     <body>
         <div class="container">
-            <!-- This is a bit nasty, but it basically says be a column first, and on larger screens be a spaced out row -->
+            <!-- Header con logo y navegación -->
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
-                <a href="{{ site.base }}/" class="">
-                    <img src="{{ site.base }}/img/logo.png"
-                         srcset="{{ site.base }}/img/logo@2x.png 2x"
-                         alt="Awesome" id="logo">
+                <a href="{{ site.baseurl }}/" class="">
+                    <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png"
+                         alt="CEVI Logo" id="logo" style="height: 60px;">
                 </a>
                 <ul class="nav nav-pills justify-content-center">
-
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
                     {% for item in site.navigation %}
-
                         {% assign itemshorturl = item.link | replace:'.html','' %}
-
                         {% assign maybe-active = '' %}
                         {% if item.title == 'Research' and page.layout == 'project' %}
                             {% assign maybe-active = 'active' %}
@@ -37,16 +33,13 @@
                         {% if itemshorturl == shorturl or is-research %}
                             {% assign maybe-active = 'active' %}
                         {% endif %}
-
                         <li class="nav-item">
                             <a class="nav-link {{ maybe-active }}"
-                               href="{{ site.base }}{{ item.link }}">
+                               href="{{ site.baseurl }}{{ item.link }}">
                                 {{ item.title }}
                             </a>
                         </li>
-
                     {% endfor %}
-
                 </ul>
             </div>
 
@@ -65,16 +58,14 @@
 
             <div class="footer">
                 <p>
-                    <a href="http://dept.example.edu/">Illustrious Department</a>
-                    at the
-                    <a href="http://example.edu/">University of Example</a>
+                    <a href="https://www.uji.es/">Universitat Jaume I</a> |
+                    <a href="https://www.uji.es/ciencies/">Departamento de Ciencias de la Computación</a>
                 </p>
             </div>
-
         </div> <!-- /container -->
 
         <!-- Support retina images. -->
         <script type="text/javascript"
-                src="{{ site.base }}/js/srcset-polyfill.js"></script>
+                src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
     </body>
 </html>

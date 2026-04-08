@@ -21,7 +21,7 @@ role-tables:
 
 <div class="jumbotron">
     <div style="text-align: center; margin-bottom: 20px;">
-        <img src="{{ site.base }}/img/logo-cevi-2@2x.png" alt="Logo CEVI" style="max-width: 250px; height: auto;">
+        <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="Logo CEVI" style="max-width: 250px; height: auto;">
     </div>
     <p>
         El <b>Grupo de Investigación CEVI</b> (Computación Evolutiva y Visualización Interactiva) 
@@ -42,7 +42,7 @@ role-tables:
     {% if numposts >= 1 %}
         <p>
             <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Noticias anteriores&hellip;</a>
+            <a href="{{ site.baseurl }}/blog.html">Noticias anteriores&hellip;</a>
         </p>
     {% endif %}
 </section>
@@ -50,9 +50,6 @@ role-tables:
 <section>
     <h2>Líneas de investigación</h2>
     <div class="card-columns">
-        {% comment %}
-        Mostramos proyectos activos (status != "inactive")
-        {% endcomment %}
         {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
         {% assign projects_by_date = projects_by_date | reverse %}
         {% for p in projects_by_date %}
@@ -62,7 +59,7 @@ role-tables:
         {% endfor %}
     </div>
     <p class="text-center">
-        <a href="{{ site.base }}/projects.html">Ver todas las líneas y proyectos &rarr;</a>
+        <a href="{{ site.baseurl }}/projects.html">Ver todas las líneas y proyectos &rarr;</a>
     </p>
 </section>
 
