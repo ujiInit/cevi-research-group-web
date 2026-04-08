@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>{{ site.name }}: {{ page.title }}</title>
         <meta charset="utf-8">
@@ -18,28 +18,28 @@
                 <a href="{{ site.baseurl }}/" class="mb-2 mb-md-0">
                     <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" id="logo">
                 </a>
-                <ul class="nav nav-pills">
-                    {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
-                    {% for item in site.navigation %}
-                        {% assign itemshorturl = item.link | replace:'.html','' %}
-                        {% assign maybe-active = '' %}
-                        {% if item.title == 'Research' and page.layout == 'project' %}
-                             {% assign maybe-active = 'active' %}
-                        {% endif %}
-                        {% if itemshorturl == shorturl or is-research %}
-                            {% assign maybe-active = 'active' %}
-                        {% endif %}
-                        <li class="nav-item">
+                <div class="nav nav-pills" role="list">
+                    {%- assign shorturl = page.url | replace:'.html','' | replace:'index','' -%}
+                    {%- for item in site.navigation -%}
+                        {%- assign itemshorturl = item.link | replace:'.html','' -%}
+                        {%- assign maybe-active = '' -%}
+                        {%- if item.title == 'Research' and page.layout == 'project' -%}
+                            {%- assign maybe-active = 'active' -%}
+                        {%- endif -%}
+                        {%- if itemshorturl == shorturl or is-research -%}
+                            {%- assign maybe-active = 'active' -%}
+                        {%- endif -%}
+                        <div class="nav-item" role="listitem">
                             <a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">
                                 {{ item.title }}
                             </a>
-                        </li>
-                    {% endfor %}
-                </ul>
+                        </div>
+                    {%- endfor -%}
+                </div>
             </div>
 
             {% if page.image %}
-                <img src="{{ page.image }}" alt="{{ page.title }}" style="max-width: 400px" class="img-fluid mx-auto d-block mb-4"/>
+                <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid mx-auto d-block mb-4 page-image">
             {% endif %}
 
             {% if page.notitle != true %}
@@ -54,7 +54,7 @@
                     <a href="https://www.uji.es/ciencies/">Departamento de Ciencias de la Computación</a>
                 </p>
             </div>
-        </div>
+        </div> <!-- /container -->
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
     </body>

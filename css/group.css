@@ -1,3 +1,7 @@
+/* ============================================
+   ESTILOS BASE DE LA PLANTILLA (research-group-web)
+   ============================================ */
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -29,7 +33,7 @@ a > .fa {
   display: inline;
 }
 
-/* Jumbotron */
+/* Jumbotron (original, apenas se usa ahora) */
 .jumbotron {
   text-align: justify;
   padding-top: 1.5em;
@@ -39,9 +43,9 @@ a > .fa {
 
 /* Group logo - mantener proporciones */
 #logo {
-    max-height: 60px;   /* Altura máxima deseada */
-    width: auto;        /* Ancho automático para respetar proporción */
-    margin: 2px 0 8px 0;
+    max-height: 60px;
+    width: auto;
+    margin: 0;
 }
 
 /* Front page news */
@@ -135,124 +139,125 @@ svg {
   vertical-align: middle;
 }
 
-/* ===== NUEVOS ESTILOS PARA LA PÁGINA DE INICIO MEJORADA ===== */
+/* ============================================
+   ESTILOS PARA LA PÁGINA DE INICIO TECNOLÓGICA
+   ============================================ */
 
-/* ===== ESTILOS PARA EL HERO (asegurar fondo azul y texto blanco) ===== */
-.hero-section {
-    background: linear-gradient(135deg, #0a2b5e 0%, #1a4a8a 100%);
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero con fondo dinámico y grid */
+.hero-tech {
+    background: linear-gradient(135deg, #0a0f2a 0%, #0a1a3a 50%, #0a2b5e 100%);
     position: relative;
     overflow: hidden;
-    color: white !important;  /* Fuerza texto blanco */
+    color: white;
 }
 
-.hero-section h1,
-.hero-section p,
-.hero-section .lead {
-    color: white !important;
-}
-
-.hero-section .btn-light {
-    color: #0a2b5e !important;
-    background-color: white !important;
-    border-color: white !important;
-}
-
-.hero-section .btn-outline-light {
-    color: white !important;
-    border-color: white !important;
-}
-
-.hero-section .btn-outline-light:hover {
-    background-color: white !important;
-    color: #0a2b5e !important;
-}
-
-/* Separación extra para botones del hero */
-.hero-section .btn {
-    margin-left: 1.5rem !important;
-    margin-right: 1.5rem !important;
-}
-
-/* Asegurar que el contenedor de botones use gap amplio */
-.hero-section .d-flex {
-    gap: 2rem !important;
-}
-
-.feature-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: rgba(25, 118, 210, 0.1);
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.feature-icon i {
-    font-size: 2.5rem;
-    color: #1976d2;
-}
-
-.feature-card:hover .feature-icon {
-    transform: scale(1.05);
-    background-color: rgba(25, 118, 210, 0.2);
-}
-
-.card {
-    border: none;
-    border-radius: 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 30px -15px rgba(0,0,0,0.1);
-}
-
-.btn-outline-light:hover {
-    background-color: white;
-    color: #0a2b5e !important;
-}
-
-.section-title {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.section-title:after {
-    content: '';
+.hero-tech::before {
+    content: "";
     position: absolute;
-    bottom: -10px;
+    top: 0;
     left: 0;
-    right: 0;
-    margin: auto;
-    width: 60px;
-    height: 3px;
-    background-color: #1976d2;
-    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(25, 118, 210, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(25, 118, 210, 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
 }
 
-.bg-soft-blue {
-    background-color: #f0f7ff;
+.hero-tech .container {
+    position: relative;
+    z-index: 2;
 }
 
-.contact-info a {
+/* Botones con glow */
+.glow-btn {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(25, 118, 210, 0.3);
+}
+
+.glow-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(25, 118, 210, 0.8);
+}
+
+/* Tarjetas tipo glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(10px); /* para Safari */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -15px rgba(0,0,0,0.3);
+    border-color: rgba(25, 118, 210, 0.5);
+}
+
+/* Tarjetas de proyectos (blancas, con sombra) */
+.project-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Insignias de tecnologías */
+.tech-badge {
+    background: rgba(25, 118, 210, 0.1);
+    border-radius: 50px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1976d2;
+    margin: 0 5px 10px 0;
+    display: inline-block;
+}
+
+/* Footer tecnológico */
+.footer-tech {
+    background: #0a0f2a;
+    color: #aaa;
+    border-top: 1px solid rgba(25,118,210,0.2);
+    padding: 3rem 0;
+}
+
+.footer-tech a {
     color: #1976d2;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.footer-tech a:hover {
     text-decoration: underline;
 }
 
-.rounded-pill {
-    border-radius: 50rem !important;
+/* Fondo suave azul para secciones */
+.bg-soft-blue {
+    background-color: #f0f7ff;
 }
 
+/* Ajustes de iconos y colores primarios */
 .text-primary {
     color: #1976d2 !important;
 }
@@ -279,4 +284,46 @@ svg {
 .btn-outline-primary:hover {
     background-color: #1976d2;
     border-color: #1976d2;
+    color: white;
+}
+
+/* Efecto hover para enlaces dentro de tarjetas glass */
+.glass-card .btn-link {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.glass-card .btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Separación extra para botones del hero (por si acaso) */
+.hero-tech .btn {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Ajuste responsive para el header (logo + menú) */
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        align-items: flex-end;  /* alinea por la parte inferior */
+    }
+    .header a,
+    .header .nav-pills {
+        margin-bottom: 0;
+    }
+}
+
+/* Título de sección grande (para la página de inicio) */
+.section-heading-xl {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Imagen de página (para layouts que la usen) */
+.page-image {
+    max-width: 400px;
 }
