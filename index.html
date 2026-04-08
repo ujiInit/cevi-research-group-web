@@ -4,78 +4,90 @@ title: Inicio
 notitle: true
 ---
 
-<div class="jumbotron jumbotron-fluid bg-primary text-white" style="background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); margin-bottom: 0;">
-    <div class="container text-center">
-        <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" style="max-width: 200px; margin-bottom: 20px;">
-        <h1 class="display-4">Centro de Visualización Interactiva (CEVI)</h1>
+<!-- Hero Section -->
+<div class="hero-section text-white py-5">
+    <div class="container py-5 text-center">
+        <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" style="max-width: 180px; margin-bottom: 1rem;">
+        <h1 class="display-4 fw-bold">Centro de Visualización Interactiva</h1>
         <p class="lead">Institut de Noves Tecnologies de la Imatge (INIT) · Universitat Jaume I</p>
-        <hr class="my-4" style="border-color: rgba(255,255,255,0.3);">
-        <p>Investigación de vanguardia en Realidad Extendida (XR), Juegos Serios y Tecnologías de Visualización Interactiva.</p>
-        <a href="{{ site.baseurl }}/#about" class="btn btn-light btn-lg mt-3">Conoce al Grupo</a>
-        <a href="{{ site.baseurl }}/research.html" class="btn btn-outline-light btn-lg mt-3">Líneas de I+D+i</a>
-    </div>
-</div>
-
-<div id="about" class="container my-5">
-    <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-            <h2>¿Quiénes somos?</h2>
-            <p class="lead">El Centro de Visualización Interactiva (CEVI) es un grupo de investigación consolidado de la Universitat Jaume I, integrado en el prestigioso Instituto de Nuevas Tecnologías de la Imagen (INIT).</p>
-            <p>El grupo está dirigido por la <strong>Dra. Inmaculada Remolar Quintana</strong>, una reconocida investigadora en el ámbito del modelado geométrico, la visualización interactiva y los videojuegos[reference:0].</p>
-            <p>Nuestro equipo multidisciplinar investiga las últimas tecnologías en visualización interactiva, con un fuerte enfoque en la <strong>Realidad Extendida (XR)</strong>, que abarca la Realidad Virtual (RV) y la Realidad Aumentada (RA), así como el diseño y desarrollo de <strong>Juegos Serios</strong> y aplicaciones gamificadas[reference:1]. Nuestro objetivo es aplicar este conocimiento para generar soluciones innovadoras en sectores como la industria, la salud y la educación.</p>
-            <p>Lideramos proyectos de investigación europeos y nacionales, como el proyecto Horizonte Europa <strong>E-DIPLOMA</strong>, centrado en el uso de tecnologías interactivas para el e-learning[reference:2], y el proyecto Erasmus+ <strong>OSCAR</strong>, que promueve los campus digitales para estudiantes de secundaria[reference:3].</p>
-            <hr class="my-4">
+        <p class="mb-4">Investigación de vanguardia en Realidad Extendida (XR), Juegos Serios y Visualización 3D.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{{ site.baseurl }}/#about" class="btn btn-light btn-lg px-4 py-2 rounded-pill shadow-sm">Conoce al grupo</a>
+            <a href="{{ site.baseurl }}/research.html" class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill">Líneas de I+D+i</a>
         </div>
     </div>
 </div>
 
-<div class="bg-light py-5">
+<!-- Sobre nosotros -->
+<div id="about" class="container my-5 pt-4">
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title fw-bold text-center text-lg-start">¿Quiénes somos?</h2>
+            <p class="lead">El <strong>Centro de Visualización Interactiva (CEVI)</strong> es un grupo de investigación consolidado de la Universitat Jaume I, integrado en el prestigioso Instituto de Nuevas Tecnologías de la Imagen (INIT).</p>
+            <p>Dirigido por la <strong>Dra. Inmaculada Remolar Quintana</strong>, nuestro equipo multidisciplinar investiga las últimas tecnologías en visualización interactiva, con un fuerte enfoque en la <strong>Realidad Extendida (XR)</strong> (Realidad Virtual y Aumentada), el diseño de <strong>Juegos Serios</strong> y la creación automática de contenidos 3D.</p>
+            <p>Lideramos proyectos europeos como <strong>E-DIPLOMA</strong> (Horizonte Europa) y <strong>OSCAR</strong> (Erasmus+), aplicando la tecnología interactiva a la educación, la salud y la industria.</p>
+            <a href="{{ site.baseurl }}/research.html" class="btn btn-outline-primary rounded-pill mt-2">Más sobre investigación →</a>
+        </div>
+        <div class="col-lg-6 text-center">
+            <div class="bg-soft-blue p-4 rounded-4 shadow-sm">
+                <i class="fa fa-vr-cardboard fa-4x text-primary mb-3"></i>
+                <h4 class="fw-semibold">Realidad Extendida para un futuro interactivo</h4>
+                <p class="mb-0">Transferimos conocimiento al sector industrial y generamos impacto social a través de soluciones inmersivas e innovadoras.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarjetas de especialidades -->
+<div class="bg-soft-blue py-5">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4 mb-4">
-                <i class="fa fa-cube fa-3x text-primary mb-3"></i>
-                <h3>Realidad Extendida (XR)</h3>
-                <p>Líderes en investigación en Realidad Virtual y Aumentada, creando experiencias interactivas inmersivas de última generación[reference:4].</p>
-                <a href="{{ site.baseurl }}/research.html" class="btn btn-outline-primary">Ver líneas de I+D+i</a>
+                <div class="card h-100 p-4 shadow-sm feature-card">
+                    <div class="feature-icon mx-auto">
+                        <i class="fa fa-cube"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Realidad Extendida (XR)</h3>
+                    <p class="text-muted">Investigación en RV y RA para crear experiencias inmersivas de última generación aplicadas a múltiples sectores.</p>
+                    <a href="{{ site.baseurl }}/research.html" class="btn btn-link text-primary">Ver líneas →</a>
+                </div>
             </div>
             <div class="col-md-4 mb-4">
-                <i class="fa fa-gamepad fa-3x text-primary mb-3"></i>
-                <h3>Juegos Serios</h3>
-                <p>Diseño y desarrollo de videojuegos con propósito, aplicando la gamificación para la formación, la salud y la simulación industrial[reference:5].</p>
-                <a href="{{ site.baseurl }}/projects.html" class="btn btn-outline-primary">Proyectos activos</a>
+                <div class="card h-100 p-4 shadow-sm feature-card">
+                    <div class="feature-icon mx-auto">
+                        <i class="fa fa-gamepad"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Juegos Serios</h3>
+                    <p class="text-muted">Diseño y desarrollo de videojuegos con propósito: formación, simulación industrial, salud y educación.</p>
+                    <a href="{{ site.baseurl }}/projects.html" class="btn btn-link text-primary">Proyectos activos →</a>
+                </div>
             </div>
             <div class="col-md-4 mb-4">
-                <i class="fa fa-flask fa-3x text-primary mb-3"></i>
-                <h3>Visualización 3D</h3>
-                <p>Investigación en gráficos por computador, creación automática de contenidos 3D y técnicas avanzadas de visualización en tiempo real[reference:6].</p>
-                <a href="{{ site.baseurl }}/publications.html" class="btn btn-outline-primary">Publicaciones científicas</a>
+                <div class="card h-100 p-4 shadow-sm feature-card">
+                    <div class="feature-icon mx-auto">
+                        <i class="fa fa-flask"></i>
+                    </div>
+                    <h3 class="h5 fw-bold">Visualización 3D</h3>
+                    <p class="text-muted">Gráficos por computador, creación automática de contenidos y técnicas avanzadas de visualización en tiempo real.</p>
+                    <a href="{{ site.baseurl }}/publications.html" class="btn btn-link text-primary">Publicaciones →</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Últimas noticias</h3>
-            <ul class="list-unstyled">
-                {% for post in site.posts limit:3 %}
-                    <li class="mb-3">
-                        <span class="badge badge-primary">{{ post.date | date: "%d/%m/%Y" }}</span>
-                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {% else %}
-                    <li>Próximamente publicaremos las novedades del grupo.</li>
-                {% endfor %}
-            </ul>
-            <a href="{{ site.baseurl }}/blog.html" class="btn btn-link">Todas las noticias →</a>
-        </div>
-        <div class="col-md-6">
-            <h3>Contacto</h3>
-            <p>¿Interesado en colaborar con nosotros o tienes alguna pregunta?</p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:cevi@uji.es">cevi@uji.es</a></p>
-            <p><i class="fa fa-map-marker"></i> Instituto de Nuevas Tecnologías de la Imagen (INIT)<br>Universitat Jaume I · 12071 Castelló de la Plana · España</p>
-            <p><i class="fa fa-globe"></i> <a href="https://ujiInit.github.io/cevi-research-group-web">https://ujiInit.github.io/cevi-research-group-web</a></p>
+<!-- Solo contacto (sin noticias) -->
+<div class="container my-5 py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h3 class="fw-bold mb-4 text-center"><i class="fa fa-envelope text-primary me-2"></i> Contacto</h3>
+            <div class="contact-info bg-light p-4 rounded-4 shadow-sm text-center">
+                <p><i class="fa fa-envelope fa-fw text-primary me-2"></i> <a href="mailto:cevi@uji.es">cevi@uji.es</a></p>
+                <p><i class="fa fa-map-marker fa-fw text-primary me-2"></i> Instituto de Nuevas Tecnologías de la Imagen (INIT)<br>Universitat Jaume I · 12071 Castelló de la Plana · España</p>
+                <p><i class="fa fa-globe fa-fw text-primary me-2"></i> <a href="https://ujiInit.github.io/cevi-research-group-web">https://ujiInit.github.io/cevi-research-group-web</a></p>
+                <hr class="my-3">
+                <p class="small text-muted mb-0">¿Interesado en colaborar? Escríbenos, estaremos encantados de atenderte.</p>
+            </div>
         </div>
     </div>
 </div>
