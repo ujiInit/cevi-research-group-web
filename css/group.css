@@ -188,10 +188,32 @@ body {
     box-shadow: 0 0 20px rgba(25, 118, 210, 0.8);
 }
 
+/* Efecto de brillo para el título principal */
+.glitch-title {
+    background: linear-gradient(135deg, #ffffff, #a0c0ff, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Ajuste responsive para título */
+@media (max-width: 768px) {
+    .glitch-title {
+        font-size: 2rem !important;
+    }
+}
+
 /* Tarjetas tipo glassmorphism */
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
-    -webkit-backdrop-filter: blur(10px); /* para Safari */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
@@ -204,7 +226,7 @@ body {
     border-color: rgba(25, 118, 210, 0.5);
 }
 
-/* Tarjetas de proyectos (blancas, con sombra) */
+/* Tarjetas de proyectos (blancas, con sombra) - si se usan */
 .project-card {
     border-radius: 20px;
     overflow: hidden;
@@ -223,7 +245,14 @@ body {
     width: 100%;
 }
 
-/* Insignias de tecnologías */
+/* Iconos de tecnologías */
+.tech-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1976d2;
+}
+
+/* Insignias de tecnologías (por si se usan) */
 .tech-badge {
     background: rgba(25, 118, 210, 0.1);
     border-radius: 50px;
@@ -235,7 +264,7 @@ body {
     display: inline-block;
 }
 
-/* Footer tecnológico */
+/* Footer tecnológico (opcional) */
 .footer-tech {
     background: #0a0f2a;
     color: #aaa;
@@ -298,49 +327,24 @@ body {
     text-decoration: underline;
 }
 
-/* Separación extra para botones del hero (por si acaso) */
-.hero-tech .btn {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-/* Ajuste responsive para el header (logo + menú) */
-@media (min-width: 768px) {
-    .header {
-        display: flex;
-        align-items: flex-end;  /* alinea por la parte inferior */
-    }
-    .header a,
-    .header .nav-pills {
-        margin-bottom: 0;
-    }
-}
-
-/* Título de sección grande (para la página de inicio) */
-.section-heading-xl {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-/* Imagen de página (para layouts que la usen) */
-.page-image {
-    max-width: 400px;
-}
-
-/* Asegura que el menú horizontal se muestre correctamente */
+/* Asegurar que el menú horizontal (nav-pills) se muestre bien */
 .nav-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-/* Evita que los items se rompan en móvil */
 .nav-item {
     white-space: nowrap;
 }
 
-/* Efecto fade-in al cargar la página */
+/* Separación extra para botones del hero */
+.hero-tech .btn {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Animación fade-in al cargar la página */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -356,9 +360,19 @@ body {
     animation: fadeInUp 0.6s ease-out;
 }
 
-/* Pequeña mejora para la sección de tecnologías */
-.tech-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1976d2;
+/* Imagen de página (para layouts que la usen) */
+.page-image {
+    max-width: 400px;
+}
+
+/* Ajuste responsive para el header (logo + menú) */
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        align-items: flex-end;  /* alinea por la parte inferior */
+    }
+    .header a,
+    .header .nav-pills {
+        margin-bottom: 0;
+    }
 }
