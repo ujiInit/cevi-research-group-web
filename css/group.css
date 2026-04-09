@@ -437,34 +437,68 @@ svg {
     background-color: #6c757d !important;
 }
 
-/* Estilos para el selector de idioma de Google Translate */
+/* Estilos para mejorar el selector de idioma de Google Translate */
 #google_translate_element {
     margin: 0;
     padding: 0;
 }
-.goog-te-gadget {
+
+/* Ocultamos el selector original de Google (lo reemplazaremos por uno personalizado) */
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
     font-family: inherit !important;
-    font-size: 0.9rem !important;
-    color: #6c757d !important;
 }
-.goog-te-gadget a {
-    color: #1976d2 !important;
-    text-decoration: none !important;
-}
-.goog-te-gadget a:hover {
-    text-decoration: underline !important;
-}
-.goog-te-combo {
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    padding: 0.375rem 1.5rem 0.375rem 0.75rem;
+
+/* Botón personalizado que activa el selector */
+.custom-language-selector {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 6px 15px;
     font-size: 0.9rem;
-    background-color: white;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(4px);  /* Para Safari 9+ */
+    backdrop-filter: blur(4px);
 }
+
+.custom-language-selector:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.custom-language-selector i {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+/* Forzamos que el panel desplegable de Google aparezca correctamente */
+.goog-te-menu-frame {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+.goog-te-menu2 {
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
 /* Ajustes para móvil */
-@media (max-width: 767.98px) {
-    #google_translate_element {
-        text-align: center;
-        margin-top: 0.5rem;
+@media (max-width: 768px) {
+    .custom-language-selector {
+        padding: 4px 12px;
+        font-size: 0.8rem;
     }
+}
+
+/* Ocultar el div original de Google Translate (lo usamos solo como contenedor) */
+.google-translate-hidden {
+    display: none;
 }

@@ -19,6 +19,7 @@
                     <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" id="logo">
                 </a>
                 <div class="d-flex flex-column flex-md-row align-items-md-end mt-3 mt-md-0">
+                    <!-- Menú de navegación sin ul/li para evitar warnings -->
                     <div class="nav nav-pills" role="list">
                         {%- assign shorturl = page.url | replace:'.html','' | replace:'index','' -%}
                         {%- for item in site.navigation -%}
@@ -37,8 +38,11 @@
                             </div>
                         {%- endfor -%}
                     </div>
-                    <!-- Selector de idioma de Google Translate -->
-                    <div id="google_translate_element" class="ml-md-3 mt-2 mt-md-0"></div>
+                    <!-- Selector de idioma personalizado -->
+                    <div id="google_translate_element" class="google-translate-hidden"></div>
+                    <div class="custom-language-selector ml-md-3 mt-2 mt-md-0" onclick="triggerGoogleTranslate()">
+                        <i class="fa fa-language"></i> <span id="selected-lang">Idioma</span> <i class="fa fa-chevron-down"></i>
+                    </div>
                 </div>
             </div>
 
@@ -61,7 +65,7 @@
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
 
-        <!-- Scripts de Google Translate -->
+        <!-- Scripts de Google Translate (con URL https explícita) -->
         <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
@@ -70,6 +74,27 @@
                     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
                 }, 'google_translate_element');
             }
+
+            function triggerGoogleTranslate() {
+                var select = document.querySelector('.goog-te-gadget-simple .goog-te-menu-value span');
+                if (select) {
+                    select.click();
+                } else {
+                    var frame = document.querySelector('.goog-te-menu-frame');
+                    if (frame) {
+                        frame.style.visibility = 'visible';
+                    }
+                }
+            }
+
+            function updateLanguageDisplay() {
+                var select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    var selectedText = select.options[select.selectedIndex]?.text || 'Idioma';
+                    document.getElementById('selected-lang').innerText = selectedText;
+                }
+            }
+            setInterval(updateLanguageDisplay, 1000);
         </script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
