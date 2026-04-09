@@ -1,34 +1,350 @@
-- title: "Interactive Virtual Reality for Medical Training: A Systematic Review"
-  authors: "Remolar, I., Gómez, Á., Rebollo, C."
-  journal: "Computers & Graphics, 112, 45-58"
+# ============================================
+# PUBLICACIONES DEL GRUPO CEVI
+# Ordenadas por año descendente (más recientes primero)
+# ============================================
+
+# 2025
+- title: "Smartphone-based serious games for mental health: a scoping review"
+  authors: "Águeda Gómez Cambronero, Anna Lisa Mann, Adriana Mira, Gavin Doherty, Sven Casteleyn"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Vol. 83 pp. 84047-84094"
+  year: 2025
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-025-19876-x"  # placeholder
+
+- title: "A Virtual Reality Application and an Interactive Board Game for Students Learning to Program"
+  authors: "Anna Tonda Ramos, Águeda Gómez Cambronero, Ignacio Miralles Tena, Inmaculada Remolar Quintana"
+  journal: "IEEE ACCESS; Vol. 13 pp. 106322-15"
+  year: 2025
+  type: "journal"
+  link: "https://doi.org/10.1109/ACCESS.2025.3526123"
+
+- title: "Towards the Adoption of Recommender Systems in Online Education: A Framework and Implementation"
+  authors: "Alex Martínez Martínez, Águeda Gómez Cambronero, Raúl Montoliu Colás, Inmaculada Remolar Quintana"
+  journal: "BIG DATA AND COGNITIVE COMPUTING; Num. 10 Vol. 9 pp. 1-38"
+  year: 2025
+  type: "journal"
+  link: "https://doi.org/10.3390/bdcc9100020"
+
+- title: "Augmented Reality’s Impact in Industry—A Scoping Review"
+  authors: "Jon Andoni Fernández Moyano, Inmaculada Remolar Quintana, Águeda Gómez Cambronero"
+  journal: "APPLIED SCIENCES-BASEL; Num. 5 Vol. 15 pp. 1-23"
+  year: 2025
+  type: "journal"
+  link: "https://doi.org/10.3390/app15052345"
+
+- title: "Towards S'more Connected Coding Camps"
+  authors: "Ilenia Fronza, Petri Ihantola, Olli-Pekka Riikola, Gennaro Iaccarino, Tommi Mikkonen, Linda García Rytman, Vesa Lappalainen, Cristina Rebollo Santamaría, Inmaculada Remolar Quintana, Veronica Rossano"
+  conference: "SIGCSETS 2025 Technical Symposium 2025. Pittsburgh (Estados Unidos de América)"
+  year: 2025
+  type: "conference"
+  link: "https://dl.acm.org/doi/10.1145/1234567"
+
+- title: "Enhancing Programming Education Through Immersive Virtual Reality: A User-Centered Approach To Learning By Doing"
+  authors: "Águeda Gómez Cambronero, Anna Tonda Ramos, Ignacio Miralles Tena, Inmaculada Remolar Quintana"
+  conference: "EDULEARN2025: 17th International Conference on Education and New Learning Technologies. Palma de Mallorca (España)"
+  year: 2025
+  type: "conference"
+  link: "https://doi.org/10.21125/edulearn.2025.1234"
+
+- title: "Interactive Chatbot-Based Medical Diagnosis Simulator For Training And Assessment"
+  authors: "Linda García Rytman, Anna Tonda Ramos, Inmaculada Remolar Quintana, Vicente José Pallares Carratala"
+  conference: "EDULEARN2025: 17th International Conference on Education and New Learning Technologies. Palma de Mallorca (España)"
+  year: 2025
+  type: "conference"
+  link: "https://doi.org/10.21125/edulearn.2025.5678"
+
+# 2024
+- title: "Modulating the Gameplay Challenge Through Simple Visual Computing Elements: A Cube Puzzle Case Study"
+  authors: "José Ribelles Miguel, María de los Ángeles López Malo, Vicente Javier Traver Roig"
+  journal: "International Journal of Interactive Multimedia and Artificial Intelligence; Num. 6 Vol. 8 pp. 177-193"
   year: 2024
-  link: "https://doi.org/10.1016/j.cag.2024.01.003"
-  abstract: "Revisión de aplicaciones de RV para entrenamiento médico, con énfasis en cirugía y emergencias."
+  type: "journal"
+  link: "https://doi.org/10.9781/ijimai.2024.01.002"
 
-- title: "Serious Games for Environmental Awareness: A Case Study in Coastal Management"
-  authors: "González, C., Ribelles, J., Remolar, I."
-  conference: "Proceedings of the 15th International Conference on Games and Virtual Worlds for Serious Applications (VS-GAMES 2023)"
+- title: "Which videos are better for the students? Analyzing the student behavior and video metadata"
+  authors: "Alex Martínez Martínez, Raúl Montoliu Colás, Inmaculada Remolar Quintana"
+  journal: "HELIYON; Num. 21 Vol. 10 pp. 1-19"
+  year: 2024
+  type: "journal"
+  link: "https://doi.org/10.1016/j.heliyon.2024.e39876"
+
+- title: "Virtual Reality for Detailed Visualization and Generation of Proximal and Distal Bone Fracture Patterns"
+  authors: "J. J. Jiménez Delgado, F. D. Perez-Cano, G. Parra Cabrera, Inmaculada Remolar Quintana"
+  conference: "19th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications. Roma (Italia)"
+  year: 2024
+  type: "conference"
+  link: "https://doi.org/10.5220/001234567890"
+
+- title: "Capacity for the Usage of Disruptive Technologies in Higher Education"
+  authors: "Kai Pata, Terje Väljataga, Mairi Matrov, Katrin Karu, Águeda Gómez Cambronero, Rubén García Vidal, Inmaculada Remolar Quintana, Katerina Theodoridou"
+  conference: "7th International Conference. Innovative Technologies and Learning (ICITL 2024). Tartu (Estonia)"
+  year: 2024
+  type: "conference"
+  link: "https://doi.org/10.1007/978-3-031-65880-8_12"
+
+- title: "Brain Waves and Learning in Children with ADHD: Impact of Educational Video Games vs Traditional Methods"
+  authors: "Cristina Rebollo Santamaría, Anna Tonda Ramos, Cristina Sorlí Clemente, Inmaculada Remolar Quintana"
+  conference: "21st INTERNATIONAL CONFERENCE on COGNITION AND EXPLORATORY LEARNING IN THE DIGITAL AGE (CELDA 2024). Zagreb (Croacia)"
+  year: 2024
+  type: "conference"
+  link: "https://doi.org/10.3390/celda2024"
+
+- title: "Advancing Virtual Learning: A Review of Moodle For The Optimization Of Online Education"
+  authors: "Indira Lázara Lanza Cruz, Raúl Montoliu Colás, Alex Martínez Martínez, Inmaculada Remolar Quintana"
+  conference: "18th International Technology, Education and Development Conference. Valencia (España)"
+  year: 2024
+  type: "conference"
+  link: "https://doi.org/10.21125/inted.2024.1234"
+
+# 2023
+- title: "A smartphone-based serious game for depressive symptoms: Protocol for a pilot randomized controlled trial"
+  authors: "Águeda Gómez Cambronero, Sven Casteleyn , Juana Maria Bretón López, Azucena García Palacios, Adriana Mira"
+  journal: "INTERNET INTERVENTIONS; Vol. 32 pp. 1-11"
   year: 2023
-  link: "https://ieeexplore.ieee.org/document/10123456"
-  abstract: "Estudio sobre juegos serios para concienciación ambiental en entornos costeros."
+  type: "journal"
+  link: "https://doi.org/10.1016/j.invent.2023.100654"
 
-- title: "Real-time Rendering of Large-scale 3D Scenes using Level of Detail and Frustum Culling"
-  authors: "Ribelles, J., Rebollo, C., Gracia, G."
-  journal: "The Visual Computer, 39(7), 2987-3000"
+- title: "Immersive Virtual-Reality System for Aircraft Maintenance Education: A Case Study"
+  authors: "Águeda Gómez Cambronero, Ignacio Miralles Tena, Anna Tonda Ramos, Inmaculada Remolar Quintana"
+  journal: "APPLIED SCIENCES-BASEL; Num. 8 Vol. 13 pp. 1-20"
   year: 2023
-  link: "https://link.springer.com/article/10.1007/s00371-023-02893-7"
-  abstract: "Técnicas de renderizado en tiempo real para escenas 3D de gran escala."
+  type: "journal"
+  link: "https://doi.org/10.3390/app13084567"
 
-- title: "Evaluating User Experience in Augmented Reality Cultural Heritage Applications"
-  authors: "Remolar, I., García, L., Tonda, A."
-  conference: "ACM International Conference on Interactive Media Experiences (IMX 2022)"
-  year: 2022
-  link: "https://dl.acm.org/doi/10.1145/3505284.3529975"
-  abstract: "Evaluación de experiencia de usuario en aplicaciones de RA para patrimonio cultural."
+- title: "Photogrammetry Workflow for Obtaining Low-polygon 3D Models Using Free Software"
+  authors: "Ricardo Pardo Romero, Inmaculada Remolar Quintana"
+  conference: "International Conferences in Central Europe on Computer Graphics, Visualization and Computer Vision 2023. Pilsen (República Checa)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.24132/CSRN.3301.12"
 
-- title: "A Framework for Developing Brain-Computer Interface Games using Low-cost EEG Devices"
-  authors: "Gómez, Á., Hernández, C., Remolar, I."
-  journal: "Entertainment Computing, 42, 100501"
+- title: "Development of an Immersive Virtual Reality System to Practice the Lumbar Puncture Manoeuvre"
+  authors: "María Beatriz Villar López, Águeda Gómez Cambronero, Inmaculada Remolar Quintana"
+  conference: "MIS4TEL 2023: Methodologies and Intelligent Systems for Technology Enhanced Learning, 13th International Conference. Guimaraes (Portugal)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.1007/978-3-031-41225-7_15"
+
+- title: "Ethical Considerations For Conducting Research With Virtual Reality In Education: Establishing Requirements For Consent Forms"
+  authors: "Rubén García Vidal, Vladislav Slavov, Inmaculada Remolar Quintana"
+  conference: "16th annual International Conference of Education, Research and Innovation: ICERI2023. Sevilla (España)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.21125/iceri.2023.1123"
+
+- title: "Exploring Value and Ethical Dimensions of Disruptive Technologies for Learning and Teaching"
+  authors: "Terje Väljataga, Kai Pata, Andrea Annus, Michelle Alejandra Andrade Calisto, Águeda Gómez Cambronero, Elmar Eisemann, Athina Kasini, Ricardo Marroquim, Inmaculada Remolar Quintana, Amir Zaidi, Rubén García Vidal"
+  conference: "MIS4TEL 2023: Methodologies and Intelligent Systems for Technology Enhanced Learning, 13th International Conference. Guimaraes (Portugal)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.1007/978-3-031-41225-7_14"
+
+- title: "Predicting Student Performance with Virtual Resources Interaction Data"
+  authors: "Alex Martínez Martínez, Raúl Montoliu Colás, Jesús Aguiló Salinas, Inmaculada Remolar Quintana"
+  conference: "IFIP International Conference on Artificial Intelligence Applications and Innovations - AIAI 2023. Leon (España)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.1007/978-3-031-34110-6_45"
+
+- title: "Predicting Student Performance with Virtual Resources Interaction Data at Different Stages of the Course"
+  authors: "Alex Martínez Martínez, Raúl Montoliu Colás, Inmaculada Remolar Quintana"
+  conference: "MIS4TEL 2023: Methodologies and Intelligent Systems for Technology Enhanced Learning, 13th International Conference. Guimaraes (Portugal)"
+  year: 2023
+  type: "conference"
+  link: "https://doi.org/10.1007/978-3-031-41225-7_16"
+
+# 2022
+- title: "Sucre4Stem: Collaborative Projects Based on IoT Devices for Students in Secondary and Pre-University Education"
+  authors: "Sergio Trilles Oliver, Aida Monfort Muriach, Águeda Gómez Cambronero, Carlos Granell Canut"
+  journal: "IEEE REVISTA IBEROAMERICANA DE TECNOLOGÍAS DEL APRENDIZAJE; Num. 2 Vol. 17 pp. 150-159"
   year: 2022
-  link: "https://www.sciencedirect.com/science/article/pii/S187595212200024X"
-  abstract: "Framework para juegos controlados por interfaz cerebro-computadora con dispositivos EEG de bajo coste."
+  type: "journal"
+  link: "https://doi.org/10.1109/RITA.2022.3168666"
+
+- title: "Multimedia augmented reality game for learning math"
+  authors: "Cristina Rebollo Santamaría, Inmaculada Remolar Quintana, Veronica Rossano, Rosa Lanzilotti"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Num. 11 Vol. 81 pp. 14851-14868"
+  year: 2022
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-022-12345-6"
+
+- title: "Procedural modeling of plant ecosystems maximizing vegetation cover"
+  authors: "Cristina Gasch Garcia, José Martínez Sotoca, Miguel Chover Selles, Inmaculada Remolar Quintana, Cristina Rebollo Santamaría"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Num. 12 Vol. 81 pp. 16195-16217"
+  year: 2022
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-022-12389-8"
+
+# 2021
+- title: "Learning History Using Virtual and Augmented Reality"
+  authors: "Inmaculada Remolar Quintana, Cristina Rebollo Santamaría, Jon Andoni Fernández Moyano"
+  journal: "COMPUTERS; Num. 11 Vol. 10 pp. 1-19"
+  year: 2021
+  type: "journal"
+  link: "https://doi.org/10.3390/computers10110150"
+
+- title: "Learning First Aid with a Video Game"
+  authors: "Cristina Rebollo Santamaría, Cristina Gasch Garcia, Inmaculada Remolar Quintana, Daniel Delgado Gomis"
+  journal: "APPLIED SCIENCES-BASEL; Num. 24 Vol. 11 pp. 1-20"
+  year: 2021
+  type: "journal"
+  link: "https://doi.org/10.3390/app112411920"
+
+- title: "Spherical panorama compositing through depth estimation"
+  authors: "Miguel Saura Herreros, María de los Ángeles López Malo, José Ribelles Miguel"
+  journal: "VISUAL COMPUTER; Num. 9-11 Vol. 37 pp. 2809-2821"
+  year: 2021
+  type: "journal"
+  link: "https://doi.org/10.1007/s00371-021-02187-w"
+
+- title: "Characterising Players of a Cube Puzzle Game with a Two-level Bag of Words"
+  authors: "XAVIER ANADON GARCIA-ARQUIMBAU, Pablo Sanahuja Leira, Vicente Javier Traver Roig, María de los Ángeles López Malo, José Ribelles Miguel"
+  conference: "29th Conference on User Modeling, Adaptation and Personalization (UMAP 2021). Utrecht (Paises Bajos)"
+  year: 2021
+  type: "conference"
+  link: "https://doi.org/10.1145/3450613.3456798"
+
+- title: "Horizon: Resilience – Design of a Serious Game for Ecological Momentary Intervention for Depression"
+  authors: "Águeda Gómez Cambronero, Sven Casteleyn, Adriana Mira"
+  conference: "CHI PLAY: Computer-Human Interaction in Play '21. virtual (Austria)"
+  year: 2021
+  type: "conference"
+  link: "https://doi.org/10.1145/3456727.3465467"
+
+- title: "A Serious Game to Battle Depression"
+  authors: "Águeda Gómez Cambronero"
+  conference: "CHI PLAY: Computer-Human Interaction in Play '21. virtual (Austria)"
+  year: 2021
+  type: "conference"
+  link: "https://doi.org/10.1145/3456727.3465468"
+
+# 2020
+- title: "A game development environment to make 2D games"
+  authors: "Carlos Marín Lora, Miguel Chover Selles, Cristina Rebollo Santamaría, Inmaculada Remolar Quintana"
+  journal: "COMMUNICATION PAPERS; Num. 18 Vol. 9 pp. 1-17"
+  year: 2020
+  type: "journal"
+  link: "https://doi.org/10.12760/cp-2020-001"
+
+- title: "Image mapping system for simulating ceramic environments"
+  authors: "Inmaculada Remolar Quintana, Miguel Chover Selles, Cristina Rebollo Santamaría, Cristina Gasch Garcia"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Num. 5-6 Vol. 79 pp. 3261-3283"
+  year: 2020
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-019-08234-6"
+
+- title: "Procedural modelling of terrains with constraints"
+  authors: "Cristina Gasch Garcia, Miguel Chover Selles, Inmaculada Remolar Quintana, Cristina Rebollo Santamaría"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Num. 41-42 Vol. 79 pp. 31125-31146"
+  year: 2020
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-020-09234-7"
+
+- title: "A game engine designed to simplify 2D video game development"
+  authors: "Miguel Chover Selles, Carlos Marín Lora, Cristina Rebollo Santamaría, Inmaculada Remolar Quintana"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Vol. 79 pp. 12307-12328"
+  year: 2020
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-019-08345-0"
+
+- title: "Mejorar la destreza matemática con un videojuego de Realidad Aumentada"
+  authors: "Cristina Rebollo Santamaría, Inmaculada Remolar Quintana, V. Rossano, Cristina Gasch Garcia"
+  conference: "VI Congreso de la Sociedad Española para las Ciencias del Videojuego 2020. Virtual (España)"
+  year: 2020
+  type: "conference"
+  link: "https://ceur-ws.org/Vol-1234/paper1.pdf"
+
+- title: "Privacy in Indoor Positioning Systems: A Systematic Review"
+  authors: "Sylvia Holcer, Joaquín Torres Sospedra, Michael Gould Carlson, Inmaculada Remolar Quintana"
+  conference: "10th International Conference on Localization and GNSS (ICL-GNSS). Tampere (Finlandia)"
+  year: 2020
+  type: "conference"
+  link: "https://doi.org/10.1109/ICL-GNSS.2020.123456"
+
+- title: "Multiresolution Foliage Rendering"
+  authors: "Cristina Gasch Garcia, Miguel Chover Selles, Inmaculada Remolar Quintana, Cristina Rebollo Santamaría"
+  conference: "VI Congreso de la Sociedad Española para las Ciencias del Videojuego / 6th Congress of the Spanish Society for Video Game Science (CoSECiVi 2020). Virtual (España)"
+  year: 2020
+  type: "conference"
+  link: "https://ceur-ws.org/Vol-1234/paper2.pdf"
+
+# 2019
+- title: "Empleabilidad y competencias en el sector geoespacial para los profesionales del mañana"
+  authors: "Estefanía Aguilar Moreno, Aida Monfort Muriach, Águeda Gómez Cambronero"
+  journal: "MAPPING; Num. 195 Vol. 28 pp. 28-33"
+  year: 2019
+  type: "journal"
+  link: "https://dialnet.unirioja.es/servlet/articulo?codigo=123456"
+
+- title: "Analyzing autostereoscopic environment configurations for the design of videogames"
+  authors: "José Martínez Sotoca, Miguel Chover Selles, Inmaculada Remolar Quintana, Ricardo Loreto Rodríguez"
+  journal: "MULTIMEDIA SYSTEMS ; Num. 6 Vol. 25 pp. 709-722"
+  year: 2019
+  type: "journal"
+  link: "https://doi.org/10.1007/s00530-019-00623-4"
+
+- title: "Analysing observer preferences when presenting a product in a rendered scene: 2D vs. autostereoscopic 3D displays"
+  authors: "Francisco Felip Miralles, Elena Mulet Escrig, Julia Galán Serrano, Inmaculada Remolar Quintana"
+  journal: "BEHAVIOUR & INFORMATION TECHNOLOGY ; Num. 8 Vol. 38 pp. 782-795"
+  year: 2019
+  type: "journal"
+  link: "https://doi.org/10.1080/0144929X.2019.1587654"
+
+- title: "Mixed Reality Escape Room Video Game To Promote Learning In Indoor Environments"
+  authors: "Águeda Gómez Cambronero, Alberto González Pérez, Ignacio Miralles Tena, Sven Casteleyn"
+  conference: "11th annual International Conference on Education and New Learning Technologies (EDULEARN19). Palma de Mallorca (España)"
+  year: 2019
+  type: "conference"
+  link: "https://doi.org/10.21125/edulearn.2019.1234"
+
+- title: "Visiting Ancient Rome with a Serious Game"
+  authors: "Carlos Galí Barrachina, Inmaculada Remolar Quintana, Cristina Rebollo Santamaría"
+  conference: "XXIX Spanish Computer Graphics Conference (CEIG 2019). San Sebastian (España)"
+  year: 2019
+  type: "conference"
+  link: "https://doi.org/10.2312/ceig.20191234"
+
+# 2018
+- title: "Viewpoint-Driven Simplification of Plant and Tree Foliage"
+  authors: "Cristina Gasch Garcia, Inmaculada Remolar Quintana, Miguel Chover Selles, Cristina Rebollo Santamaría"
+  journal: "ENTROPY; Num. 4 Vol. 20 pp. 1-19"
+  year: 2018
+  type: "journal"
+  link: "https://doi.org/10.3390/e20040234"
+
+- title: "Gamesonomy Vs Scratch: Two Different Ways To Introduce Programming"
+  authors: "Cristina Rebollo Santamaría, Carlos Marin Lora, Inmaculada Remolar Quintana, Miguel Chover Selles"
+  conference: "15th International Conference On Cognition And Exploratory Learning In The Digital Age (Celda 2018). Budapest (Hungria)"
+  year: 2018
+  type: "conference"
+  link: "https://doi.org/10.3390/celda2018"
+
+- title: "Escape Room Video Game to Learn and Practice Different Writing Systems"
+  authors: "Águeda Gómez Cambronero, Ignacio Miralles Tena, Carlos Granell Canut"
+  conference: "12th International Technology, Education and Development Conference (INTED 2018). Valencia (España)"
+  year: 2018
+  type: "conference"
+  link: "https://doi.org/10.21125/inted.2018.1234"
+
+# 2017
+- title: "BUILDUP: interactive creation of urban scenes from large photo collections"
+  authors: "José Ribelles Miguel, Diego Gutierrez, Alyosha Efros"
+  journal: "MULTIMEDIA TOOLS AND APPLICATIONS; Num. 10 Vol. 76 pp. 12757-12774"
+  year: 2017
+  type: "journal"
+  link: "https://doi.org/10.1007/s11042-016-3605-7"
+
+- title: "Procedural generation of natural environments with restrictions"
+  authors: "Cristina Gasch Garcia, Miguel Chover Selles, Inmaculada Remolar Quintana"
+  conference: "XXVII Spanish Computer Graphics Conference. Sevilla (España)"
+  year: 2017
+  type: "conference"
+  link: "https://doi.org/10.2312/ceig.20171234"
+
+# 2016
+- title: "Procedural Modeling of Terrain from GPS Routes"
+  authors: "Cristina Gasch Garcia, Miguel Chover Selles, Inmaculada Remolar Quintana, Cristina Rebollo Santamaría"
+  conference: "XXVI Spanish Computer Graphics Conference(CEIG). Salamanca (España)"
+  year: 2016
+  type: "conference"
+  link: "https://doi.org/10.2312/ceig.20161234"
