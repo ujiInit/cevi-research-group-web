@@ -31,9 +31,6 @@ notitle: true
                             {% endif %}
                             , {{ pub.year }}
                         </p>
-                        {% if pub.abstract %}
-                            <p class="small mt-2">{{ pub.abstract }}</p>
-                        {% endif %}
                     </div>
                     <div class="col-md-3 text-md-end mt-2 mt-md-0">
                         {% if pub.link %}
@@ -46,10 +43,8 @@ notitle: true
             </div>
         {% endfor %}
     </div>
-
 </div>
 
-<!-- Script de filtros -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const filterButtons = document.querySelectorAll('.filter-btn');
