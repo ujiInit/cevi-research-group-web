@@ -18,23 +18,23 @@
                 <a href="{{ site.baseurl }}/" class="mb-2 mb-md-0">
                     <img src="{{ site.baseurl }}/img/logo-cevi-2@2x.png" alt="CEVI Logo" id="logo">
                 </a>
-                <div class="nav nav-pills" role="list">
-                    {%- assign shorturl = page.url | replace:'.html','' | replace:'index','' -%}
-                    {%- for item in site.navigation -%}
-                        {%- assign itemshorturl = item.link | replace:'.html','' -%}
-                        {%- assign maybe-active = '' -%}
-                        {%- if item.title == 'Research' and page.layout == 'project' -%}
-                            {%- assign maybe-active = 'active' -%}
-                        {%- endif -%}
-                        {%- if itemshorturl == shorturl or is-research -%}
-                            {%- assign maybe-active = 'active' -%}
-                        {%- endif -%}
-                        <div class="nav-item" role="listitem">
-                            <a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">
-                                {{ item.title }}
-                            </a>
-                        </div>
-                    {%- endfor -%}
+                <div class="d-flex flex-column flex-md-row align-items-md-end mt-3 mt-md-0">
+                    <ul class="nav nav-pills">
+                        {%- assign shorturl = page.url | replace:'.html','' | replace:'index','' -%}
+                        {%- for item in site.navigation -%}
+                            {%- assign itemshorturl = item.link | replace:'.html','' -%}
+                            {%- assign maybe-active = '' -%}
+                            {%- if item.title == 'Research' and page.layout == 'project' -%}
+                                {%- assign maybe-active = 'active' -%}
+                            {%- endif -%}
+                            {%- if itemshorturl == shorturl or is-research -%}
+                                {%- assign maybe-active = 'active' -%}
+                            {%- endif -%}
+                            <li class="nav-item"><a class="nav-link {{ maybe-active }}" href="{{ site.baseurl }}{{ item.link }}">{{ item.title }}</a></li>
+                        {%- endfor -%}
+                    </ul>
+                    <!-- Selector de idioma de Google Translate -->
+                    <div id="google_translate_element" class="ml-md-3 mt-2 mt-md-0"></div>
                 </div>
             </div>
 
@@ -50,11 +50,23 @@
 
             <div class="footer">
                 <p>
-                    <a href="https://www.uji.es/">Universitat Jaume I</a> |
+                    <a href="https://www.uji.es/">Universitat Jaume I</a>
                 </p>
             </div>
         </div> <!-- /container -->
 
         <script type="text/javascript" src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
+
+        <!-- Scripts de Google Translate -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'es',
+                    includedLanguages: 'en,es',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>

@@ -436,3 +436,35 @@ svg {
 .badge-secondary {
     background-color: #6c757d !important;
 }
+
+/* Estilos para el selector de idioma de Google Translate */
+#google_translate_element {
+    margin: 0;
+    padding: 0;
+}
+.goog-te-gadget {
+    font-family: inherit !important;
+    font-size: 0.9rem !important;
+    color: #6c757d !important;
+}
+.goog-te-gadget a {
+    color: #1976d2 !important;
+    text-decoration: none !important;
+}
+.goog-te-gadget a:hover {
+    text-decoration: underline !important;
+}
+.goog-te-combo {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 1.5rem 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    background-color: white;
+}
+/* Ajustes para móvil */
+@media (max-width: 767.98px) {
+    #google_translate_element {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
