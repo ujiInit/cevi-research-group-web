@@ -437,20 +437,6 @@ svg {
     background-color: #6c757d !important;
 }
 
-/* Estilos para mejorar el selector de idioma de Google Translate */
-#google_translate_element {
-    margin: 0;
-    padding: 0;
-}
-
-/* Ocultamos el selector original de Google (lo reemplazaremos por uno personalizado) */
-.goog-te-gadget-simple {
-    background-color: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    font-family: inherit !important;
-}
-
 /* Contenedor del selector de idioma */
 .google-translate-container {
     margin-left: 1rem;
@@ -491,12 +477,7 @@ svg {
     display: none !important;
 }
 
-/* Ajustar el texto que aparece (puede ser "Idioma" o "Select Language") */
-.goog-te-gadget-simple .goog-te-menu-value span:first-child {
-    font-size: 0.9rem;
-}
-
-/* Para móviles */
+/* Ajustes para móvil */
 @media (max-width: 768px) {
     .google-translate-container {
         margin-left: 0;
