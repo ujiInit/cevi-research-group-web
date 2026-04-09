@@ -1,0 +1,35 @@
+- title: "Interactive Virtual Reality for Medical Training: A Systematic Review"
+  authors: "Remolar, I., Gómez, Á., Rebollo, C."
+  journal: "Computers & Graphics, 112, 45-58"
+  year: 2024
+  doi: "10.1016/j.cag.2024.01.003"
+  type: "journal"
+  abstract: "Revisión de aplicaciones de RV para entrenamiento médico, con énfasis en cirugía y emergencias."
+
+- title: "Serious Games for Environmental Awareness: A Case Study in Coastal Management"
+  authors: "González, C., Ribelles, J., Remolar, I."
+  conference: "Proceedings of the 15th International Conference on Games and Virtual Worlds for Serious Applications (VS-GAMES 2023)"
+  year: 2023
+  doi: "10.1109/VS-GAMES.2023.00012"
+  type: "conference"
+
+- title: "Real-time Rendering of Large-scale 3D Scenes using Level of Detail and Frustum Culling"
+  authors: "Ribelles, J., Rebollo, C., Gracia, G."
+  journal: "The Visual Computer, 39(7), 2987-3000"
+  year: 2023
+  doi: "10.1007/s00371-023-02893-7"
+  type: "journal"
+
+- title: "Evaluating User Experience in Augmented Reality Cultural Heritage Applications"
+  authors: "Remolar, I., García, L., Tonda, A."
+  conference: "ACM International Conference on Interactive Media Experiences (IMX 2022)"
+  year: 2022
+  doi: "10.1145/3505284.3529975"
+  type: "conference"
+
+- title: "A Framework for Developing Brain-Computer Interface Games using Low-cost EEG Devices"
+  authors: "Gómez, Á., Hernández, C., Remolar, I."
+  journal: "Entertainment Computing, 42, 100501"
+  year: 2022
+  doi: "10.1016/j.entcom.2022.100501"
+  type: "journal"

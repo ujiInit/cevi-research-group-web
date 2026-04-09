@@ -1,9 +1,90 @@
 ---
 layout: default
-title: Publications
+title: Publicaciones
+notitle: true
 ---
-<p>
-    <a href="{{ site.base }}/bib/pubs.bib">Download BibTeX.</a>
-</p>
 
-{% include pubs.html %}
+<div class="container my-5">
+    <h1 class="page-title text-center mb-5">Publicaciones científicas</h1>
+
+    <!-- Filtros rápidos (opcional) -->
+    <div class="text-center mb-4">
+        <span class="badge badge-pill badge-primary p-2 m-1 filter-btn" data-filter="all">Todas</span>
+        <span class="badge badge-pill badge-secondary p-2 m-1 filter-btn" data-filter="journal">Revistas</span>
+        <span class="badge badge-pill badge-secondary p-2 m-1 filter-btn" data-filter="conference">Congresos</span>
+    </div>
+
+    <!-- Lista de publicaciones (se cargará desde _data/publications.yml) -->
+    <div class="publications-list">
+        {% assign pubs = site.data.publications | sort: 'year' | reverse %}
+        {% for pub in pubs %}
+            <div class="publication-item mb-4 p-3 border rounded shadow-sm" data-type="{{ pub.type }}">
+                <div class="row align-items-start">
+                    <div class="col-md-9">
+                        <h5 class="fw-bold">{{ pub.title }}</h5>
+                        <p class="mb-1 text-muted">{{ pub.authors }}</p>
+                        <p class="mb-1">
+                            {% if pub.journal %}
+                                <em>{{ pub.journal }}</em>
+                            {% elsif pub.conference %}
+                                <em>{{ pub.conference }}</em>
+                            {% endif %}
+                            , {{ pub.year }}
+                        </p>
+                        {% if pub.abstract %}
+                            <p class="small mt-2">{{ pub.abstract }}</p>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-3 text-md-end mt-2 mt-md-0">
+                        {% if pub.doi %}
+                            <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary rounded-pill">
+                                <i class="fa fa-external-link"></i> DOI
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Enlace a bases de datos externas (opcional) -->
+    <div class="text-center mt-5">
+        <p class="small text-muted">
+            <i class="fa fa-graduation-cap"></i> 
+            También puedes consultar nuestras publicaciones en 
+            <a href="https://scholar.google.es/citations?user=XXXXX" target="_blank" rel="noopener noreferrer">Google Scholar</a> o 
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=XXXXX" target="_blank" rel="noopener noreferrer">Scopus</a>.
+        </p>
+    </div>
+</div>
+
+<!-- Pequeño script para los filtros (opcional, mejora la experiencia) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const publications = document.querySelectorAll('.publication-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Actualizar estilo de botones
+                filterButtons.forEach(b => {
+                    b.classList.remove('badge-primary');
+                    b.classList.add('badge-secondary');
+                });
+                this.classList.remove('badge-secondary');
+                this.classList.add('badge-primary');
+                
+                // Filtrar publicaciones
+                publications.forEach(pub => {
+                    if (filter === 'all' || pub.getAttribute('data-type') === filter) {
+                        pub.style.display = 'block';
+                    } else {
+                        pub.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
