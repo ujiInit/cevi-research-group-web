@@ -46,7 +46,7 @@ navigation:
   - title: Inicio
     link: /
   - title: Equipo
-    link: /#people
+    link: /people.html
   - title: Investigación
     link: /research.html
   - title: Publicaciones
