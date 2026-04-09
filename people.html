@@ -1,25 +1,92 @@
-# faculty:
-#   - name: "Nombre del Investigador"
-#     url: "https://example.com"
-#     img: "foto.jpg"
-#     bio: "Líneas de investigación..."
+---
+layout: default
+title: Equipo
+---
 
-# staff:
-#   - name: "Nombre del Personal"
-#     url: ""
-#     img: ""
-#     bio: ""
+<div class="container my-5">
+    <h1 class="page-title">Equipo CEVI</h1>
 
-# postdoc:
-#   - name: "Nombre del Postdoc"
-#     url: ""
-#     img: ""
-#     bio: ""
+    <!-- Dirección / Coordinación -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="section-title">Dirección</h2>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+                <div class="person-img mx-auto mb-3">
+                    <i class="fa fa-user-circle-o fa-5x text-primary"></i>
+                </div>
+                <h5 class="card-title fw-bold">Inmaculada Remolar Quintana</h5>
+                <p class="text-muted">Dirección / Catedrática</p>
+                <p class="small">Visualización interactiva, Realidad Virtual, Juegos Serios</p>
+            </div>
+        </div>
+    </div>
 
-# grad:
-#   - name: "Nombre del Doctorando"
-#     url: ""
-#     img: ""
-#     bio: ""
+    <!-- Personal investigador doctor (postdoc) -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="section-title">Investigadores doctores</h2>
+        </div>
+        {% assign doctors = "Águeda Gómez Cambronero|Carlos González Ballester|Cristina Rebollo Santamaría|José Ribelles Miguel" | split: "|" %}
+        {% for doctor in doctors %}
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+                <div class="person-img mx-auto mb-3">
+                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                </div>
+                <h6 class="card-title fw-bold">{{ doctor }}</h6>
+                <p class="text-muted small">Personal investigador doctor</p>
+                <p class="small">Dedicación: 100%</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 
-# Por ahora, dejamos todo comentado para que no intente cargar imágenes que no existen
+    <!-- Personal investigador en formación (grad) -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="section-title">Investigadores en formación</h2>
+        </div>
+        {% assign students = "Linda García Rytman|Anna Tonda Ramos" | split: "|" %}
+        {% for student in students %}
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+                <div class="person-img mx-auto mb-3">
+                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                </div>
+                <h6 class="card-title fw-bold">{{ student }}</h6>
+                <p class="text-muted small">Personal investigador en formación</p>
+                <p class="small">Dedicación: 100%</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Personal investigador colaborador y apoyo -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <h2 class="section-title">Colaboradores y apoyo</h2>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+                <div class="person-img mx-auto mb-3">
+                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                </div>
+                <h6 class="card-title fw-bold">Gema Gracia del Olmo</h6>
+                <p class="text-muted small">Personal investigador colaborador</p>
+                <p class="small">Dedicación: 100%</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm border-0 text-center p-3">
+                <div class="person-img mx-auto mb-3">
+                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                </div>
+                <h6 class="card-title fw-bold">Cristian Hernández Delgado</h6>
+                <p class="text-muted small">Personal de apoyo a la investigación</p>
+                <p class="small">Dedicación: 100%</p>
+            </div>
+        </div>
+    </div>
+</div>

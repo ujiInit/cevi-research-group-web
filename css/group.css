@@ -386,3 +386,19 @@ svg {
         margin-bottom: 0;
     }
 }
+
+/* Título de página (equipo, investigación, etc.) */
+.page-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #0a2b5e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+}
