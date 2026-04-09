@@ -451,54 +451,59 @@ svg {
     font-family: inherit !important;
 }
 
-/* Botón personalizado que activa el selector */
-.custom-language-selector {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    padding: 6px 15px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: white;
-    transition: all 0.3s ease;
-    -webkit-backdrop-filter: blur(4px);  /* Para Safari 9+ */
-    backdrop-filter: blur(4px);
+/* Contenedor del selector de idioma */
+.google-translate-container {
+    margin-left: 1rem;
 }
 
-.custom-language-selector:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
+/* Estilizar el selector original de Google Translate */
+.goog-te-gadget-simple {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 30px !important;
+    padding: 6px 12px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 0.9rem !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
     transform: translateY(-2px);
 }
 
-.custom-language-selector i {
-    margin-right: 8px;
-    font-size: 1rem;
+.goog-te-gadget-simple .goog-te-menu-value span {
+    color: white !important;
 }
 
-/* Forzamos que el panel desplegable de Google aparezca correctamente */
-.goog-te-menu-frame {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 8px;
+.goog-te-gadget-simple .goog-te-menu-value:after {
+    content: "▼";
+    font-size: 0.7rem;
+    margin-left: 8px;
+    color: white;
+    display: inline-block;
 }
 
-.goog-te-menu2 {
-    border-radius: 8px !important;
-    font-family: 'Inter', sans-serif !important;
+/* Ocultar el icono de Google */
+.goog-te-gadget-icon {
+    display: none !important;
 }
 
-/* Ajustes para móvil */
+/* Ajustar el texto que aparece (puede ser "Idioma" o "Select Language") */
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    font-size: 0.9rem;
+}
+
+/* Para móviles */
 @media (max-width: 768px) {
-    .custom-language-selector {
-        padding: 4px 12px;
-        font-size: 0.8rem;
+    .google-translate-container {
+        margin-left: 0;
+        margin-top: 0.5rem;
     }
-}
-
-/* Ocultar el div original de Google Translate (lo usamos solo como contenedor) */
-.google-translate-hidden {
-    display: none;
+    .goog-te-gadget-simple {
+        padding: 4px 10px !important;
+        font-size: 0.8rem !important;
+    }
 }

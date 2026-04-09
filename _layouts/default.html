@@ -38,8 +38,8 @@
                             </div>
                         {%- endfor -%}
                     </div>
-                    <!-- Selector de idioma personalizado -->
-                    <div id="google_translate_element" class="google-translate-hidden"></div>
+                    <!-- Selector de idioma de Google Translate (estilizado con CSS) -->
+                    <div id="google_translate_element" class="google-translate-container"></div>
                     <div class="custom-language-selector ml-md-3 mt-2 mt-md-0" onclick="triggerGoogleTranslate()">
                         <i class="fa fa-language"></i> <span id="selected-lang">Idioma</span> <i class="fa fa-chevron-down"></i>
                     </div>
@@ -63,39 +63,15 @@
             </div>
         </div> <!-- /container -->
 
-        <script type="text/javascript" src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
-
-        <!-- Scripts de Google Translate (con URL https explícita) -->
         <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({
-                    pageLanguage: 'es',
-                    includedLanguages: 'en,es',
-                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-                }, 'google_translate_element');
-            }
-
-            function triggerGoogleTranslate() {
-                var select = document.querySelector('.goog-te-gadget-simple .goog-te-menu-value span');
-                if (select) {
-                    select.click();
-                } else {
-                    var frame = document.querySelector('.goog-te-menu-frame');
-                    if (frame) {
-                        frame.style.visibility = 'visible';
-                    }
-                }
-            }
-
-            function updateLanguageDisplay() {
-                var select = document.querySelector('.goog-te-combo');
-                if (select) {
-                    var selectedText = select.options[select.selectedIndex]?.text || 'Idioma';
-                    document.getElementById('selected-lang').innerText = selectedText;
-                }
-            }
-            setInterval(updateLanguageDisplay, 1000);
-        </script>
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'en,es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+         </script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 </html>
