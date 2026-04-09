@@ -193,14 +193,15 @@ svg {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
-    background: linear-gradient(135deg, #00c6ff, #0072ff, #00c6ff);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: shine 4s linear infinite;
-    text-shadow: 0 0 10px rgba(0,114,255,0.3);
-    transition: transform 0.3s ease;
+    color: white;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 5px rgba(255,255,255,0.3); }
+    50% { text-shadow: 0 0 20px rgba(255,255,255,0.8); }
+    100% { text-shadow: 0 0 5px rgba(255,255,255,0.3); }
 }
 
 .glitch-title:hover {
