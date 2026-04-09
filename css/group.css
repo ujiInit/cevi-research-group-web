@@ -442,7 +442,20 @@ svg {
     margin-left: 1rem;
 }
 
-/* Estilizar el selector original de Google Translate */
+/* Contenedor del selector de idioma */
+.google-translate-container {
+    margin-left: 1rem;
+}
+
+/* Ocultar el icono de Google y otros elementos no deseados */
+.goog-te-gadget-icon,
+.goog-te-gadget-simple .goog-te-menu-value span:first-child .goog-te-gadget-icon,
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    background: none !important;
+    display: none !important;
+}
+
+/* El botón principal */
 .goog-te-gadget-simple {
     background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
@@ -460,24 +473,34 @@ svg {
     transform: translateY(-2px);
 }
 
-.goog-te-gadget-simple .goog-te-menu-value span {
+/* El texto que muestra el idioma actual */
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: white !important;
+    font-size: 0.9rem !important;
+}
+
+/* Ocultar el icono interno y el texto "Idioma" original si existe */
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    display: inline-block !important;
     color: white !important;
 }
 
+/* Flecha personalizada (reemplaza la original) */
 .goog-te-gadget-simple .goog-te-menu-value:after {
     content: "▼";
     font-size: 0.7rem;
     margin-left: 8px;
     color: white;
     display: inline-block;
+    border: none;
 }
 
-/* Ocultar el icono de Google */
-.goog-te-gadget-icon {
+/* Ocultar el texto adicional que a veces aparece */
+.goog-te-menu-value span:not(:first-child) {
     display: none !important;
 }
 
-/* Ajustes para móvil */
+/* Para móviles */
 @media (max-width: 768px) {
     .google-translate-container {
         margin-left: 0;
