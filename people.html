@@ -5,186 +5,137 @@ notitle: true
 ---
 
 <div class="container my-5">
-    <h1 class="page-title">Equipo CEVI</h1>
+    <h1 class="page-title text-center mb-5">Equipo CEVI</h1>
 
     <!-- Dirección / Coordinación -->
+    {% assign direction_members = site.data.people | where: "category", "direction" %}
+    {% if direction_members.size > 0 %}
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="section-title">Coordinación</h2>
+            <h2 class="section-title notranslate">Dirección</h2>
         </div>
-        <div class="col-md-6 col-lg-4">
+        {% for person in direction_members %}
+        <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 shadow-sm border-0 text-center p-3">
                 <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-5x text-primary"></i>
+                    {% if person.img and person.img != "" %}
+                        <img src="{{ site.baseurl }}/img/people/{{ person.img }}" alt="{{ person.name }}" class="rounded-circle" width="100">
+                    {% else %}
+                        <i class="fa fa-user-circle-o fa-5x text-primary"></i>
+                    {% endif %}
                 </div>
                 <h5 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=61904" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Inmaculada Remolar Quintana
-                    </a>
+                    {% if person.url and person.url != "" %}
+                        <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">{{ person.name }}</a>
+                    {% else %}
+                        {{ person.name }}
+                    {% endif %}
                 </h5>
-                <p class="text-muted">Dirección / Catedrática</p>
-                <p class="small">Visualización interactiva, Realidad Virtual, Juegos Serios</p>
+                <p class="text-muted">{{ person.role }}</p>
+                {% if person.bio %}
+                    <p class="small">{{ person.bio }}</p>
+                {% endif %}
             </div>
         </div>
+        {% endfor %}
     </div>
+    {% endif %}
 
-    <!-- Personal investigador doctor (postdoc) -->
+    <!-- Investigadores doctores -->
+    {% assign doctor_members = site.data.people | where: "category", "doctor" %}
+    {% if doctor_members.size > 0 %}
     <div class="row mb-5">
         <div class="col-12">
             <h2 class="section-title">Investigadores doctores</h2>
         </div>
+        {% for person in doctor_members %}
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm border-0 text-center p-3">
                 <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% if person.img and person.img != "" %}
+                        <img src="{{ site.baseurl }}/img/people/{{ person.img }}" alt="{{ person.name }}" class="rounded-circle" width="80">
+                    {% else %}
+                        <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% endif %}
                 </div>
                 <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=544418" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Águeda Gómez Cambronero
-                    </a>
+                    {% if person.url and person.url != "" %}
+                        <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">{{ person.name }}</a>
+                    {% else %}
+                        {{ person.name }}
+                    {% endif %}
                 </h6>
-                <p class="text-muted small">Personal investigador doctor</p>
+                <p class="text-muted small">{{ person.role }}</p>
                 <p class="small">Dedicación: 100%</p>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm border-0 text-center p-3">
-                <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
-                </div>
-                <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=90001" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Carlos González Ballester
-                    </a>
-                </h6>
-                <p class="text-muted small">Personal investigador doctor</p>
-                <p class="small">Dedicación: 100%</p>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm border-0 text-center p-3">
-                <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
-                </div>
-                <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=54309" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Cristina Rebollo Santamaría
-                    </a>
-                </h6>
-                <p class="text-muted small">Personal investigador doctor</p>
-                <p class="small">Dedicación: 100%</p>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm border-0 text-center p-3">
-                <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
-                </div>
-                <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=56451" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        José Ribelles Miguel
-                    </a>
-                </h6>
-                <p class="text-muted small">Personal investigador doctor</p>
-                <p class="small">Dedicación: 100%</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
+    {% endif %}
 
-    <!-- Personal investigador en formación (grad) -->
+    <!-- Investigadores en formación -->
+    {% assign formation_members = site.data.people | where: "category", "formation" %}
+    {% if formation_members.size > 0 %}
     <div class="row mb-5">
         <div class="col-12">
             <h2 class="section-title">Investigadores en formación</h2>
         </div>
+        {% for person in formation_members %}
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="card h-100 shadow-sm border-0 text-center p-3">
                 <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% if person.img and person.img != "" %}
+                        <img src="{{ site.baseurl }}/img/people/{{ person.img }}" alt="{{ person.name }}" class="rounded-circle" width="80">
+                    {% else %}
+                        <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% endif %}
                 </div>
                 <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal?p_departamento=1442&p_profesor=481078" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Linda García Rytman
-                    </a>
+                    {% if person.url and person.url != "" %}
+                        <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">{{ person.name }}</a>
+                    {% else %}
+                        {{ person.name }}
+                    {% endif %}
                 </h6>
-                <p class="text-muted small">Personal investigador en formación</p>
+                <p class="text-muted small">{{ person.role }}</p>
                 <p class="small">Dedicación: 100%</p>
             </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <div class="card h-100 shadow-sm border-0 text-center p-3">
-                <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
-                </div>
-                <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/institucional/estructura/personal/?p_profesor=781482" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Anna Tonda Ramos
-                    </a>
-                </h6>
-                <p class="text-muted small">Personal investigador en formación</p>
-                <p class="small">Dedicación: 100%</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
+    {% endif %}
 
-    <!-- Personal investigador colaborador y apoyo -->
+    <!-- Colaboradores y apoyo -->
+    {% assign collaborators = site.data.people | where: "category", "collaborator" %}
+    {% assign support = site.data.people | where: "category", "support" %}
+    {% assign other_members = collaborators | concat: support %}
+    {% if other_members.size > 0 %}
     <div class="row mb-5">
         <div class="col-12">
             <h2 class="section-title">Colaboradores y apoyo</h2>
         </div>
+        {% for person in other_members %}
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 shadow-sm border-0 text-center p-3">
                 <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% if person.img and person.img != "" %}
+                        <img src="{{ site.baseurl }}/img/people/{{ person.img }}" alt="{{ person.name }}" class="rounded-circle" width="80">
+                    {% else %}
+                        <i class="fa fa-user-circle-o fa-4x text-primary"></i>
+                    {% endif %}
                 </div>
                 <h6 class="card-title fw-bold">
-                    <a href="https://www.uji.es/departaments/com/base/estructura/personal/?p_departamento=1442&p_profesor=6657" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Gema Gracia del Olmo
-                    </a>
+                    {% if person.url and person.url != "" %}
+                        <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer" class="text-dark text-decoration-none">{{ person.name }}</a>
+                    {% else %}
+                        {{ person.name }}
+                    {% endif %}
                 </h6>
-                <p class="text-muted small">Personal investigador colaborador</p>
+                <p class="text-muted small">{{ person.role }}</p>
                 <p class="small">Dedicación: 100%</p>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm border-0 text-center p-3">
-                <div class="person-img mx-auto mb-3">
-                    <i class="fa fa-user-circle-o fa-4x text-primary"></i>
-                </div>
-                <h6 class="card-title fw-bold">
-                    <a href="https://www.linkedin.com/in/cristian0x0/" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       class="text-decoration-none text-dark">
-                        Cristian Hernández Delgado
-                    </a>
-                </h6>
-                <p class="text-muted small">Personal de apoyo a la investigación</p>
-                <p class="small">Dedicación: 100%</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
+    {% endif %}
 </div>
