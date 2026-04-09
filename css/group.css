@@ -193,7 +193,10 @@ svg {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
-    color: white;
+    color: white !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
     text-shadow: 0 0 5px rgba(255,255,255,0.5);
     animation: glowPulse 2s ease-in-out infinite;
 }
