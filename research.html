@@ -8,135 +8,39 @@ notitle: true
     <h1 class="page-title text-center mb-5">Líneas de investigación</h1>
 
     <div class="row g-5">
-        <!-- Realidad Extendida (XR) -->
+        {% for line in site.data.research_lines %}
         <div class="col-md-6 mb-5">
             <div class="glass-card p-4 text-center h-100">
-                <i class="fa fa-cube fa-3x text-primary mb-3"></i>
-                <h3 class="h5 fw-bold">Realidad Extendida (XR)</h3>
-                <p class="text-muted">Investigación en Realidad Virtual (RV) y Realidad Aumentada (RA) para crear experiencias inmersivas de última generación, con aplicaciones en educación, salud y patrimonio industrial.</p>
-                <p class="small">Técnicas de interacción avanzadas y visualización en tiempo real.</p>
+                <i class="fa {{ line.icon }} fa-3x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">{{ line.name }}</h3>
+                <p class="text-muted">{{ line.description }}</p>
+                <p class="small">{{ line.tags }}</p>
+                <a href="{{ site.baseurl }}{{ line.link }}" class="btn btn-link text-primary">{{ line.link_text }}</a>
             </div>
         </div>
-
-        <!-- Juegos Serios -->
-        <div class="col-md-6 mb-5">
-            <div class="glass-card p-4 text-center h-100">
-                <i class="fa fa-gamepad fa-3x text-primary mb-3"></i>
-                <h3 class="h5 fw-bold">Juegos Serios</h3>
-                <p class="text-muted">Diseño y desarrollo de videojuegos con propósito, aplicados a la formación, la simulación industrial y la salud, combinando mecánicas de juego con objetivos educativos.</p>
-                <p class="small">Gamificación y entornos interactivos de aprendizaje.</p>
-            </div>
-        </div>
-
-        <!-- Visualización 3D -->
-        <div class="col-md-6 mb-5">
-            <div class="glass-card p-4 text-center h-100">
-                <i class="fa fa-flask fa-3x text-primary mb-3"></i>
-                <h3 class="h5 fw-bold">Visualización 3D</h3>
-                <p class="text-muted">Gráficos por computador, creación automática de contenidos y técnicas avanzadas de visualización en tiempo real para la exploración de datos complejos y entornos virtuales.</p>
-                <p class="small">Modelado 3D, renderizado y visualización científica.</p>
-            </div>
-        </div>
-
-        <!-- Interfaz Cerebro-Computadora (BCI) -->
-        <div class="col-md-6 mb-5">
-            <div class="glass-card p-4 text-center h-100">
-                <i class="fa fa-cogs fa-3x text-primary mb-3"></i>
-                <h3 class="h5 fw-bold">Interfaces Cerebro-Computadora (BCI)</h3>
-                <p class="text-muted">Desarrollamos videojuegos y aplicaciones interactivas que se controlan mediante la interpretación de las ondas cerebrales del jugador, utilizando tecnología de electroencefalograma (EEG). Una línea de investigación puntera en el campo de la interacción persona-ordenador.</p>
-                <p class="small">Biofeedback, neurotecnología aplicada al ocio, control mental de entornos virtuales.</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 
     <!-- Proyectos destacados -->
     <div class="mt-5 pt-5">
         <h2 class="text-center fw-bold mb-5">Proyectos destacados</h2>
         <div class="row g-5">
+            {% for project in site.data.projects %}
             <div class="col-md-6 mb-5">
                 <div class="project-card h-100">
                     <div class="p-4">
-                        <i class="fa fa-globe fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">E-DIPLOMA</h4>
-                        <p class="small text-muted">Proyecto Horizonte Europa (2022-2025) coordinado por la UJI con un presupuesto de 3 millones de euros. Su objetivo es transformar el ecosistema de e-learning europeo mediante una plataforma que combina realidad virtual, inteligencia artificial, tecnologías interactivas, chatbots y gamificación.</p>
-                        <a href="https://e-diplomaproject.eu/" 
+                        <i class="fa {{ project.icon }} fa-2x text-primary mb-2"></i>
+                        <h4 class="h5 fw-bold">{{ project.name }}</h4>
+                        <p class="small text-muted">{{ project.description }}</p>
+                        <a href="{{ project.link }}" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           title="Web oficial del proyecto E-DIPLOMA"
+                           title="{{ project.link_title }}"
                            class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-5">
-                <div class="project-card h-100">
-                    <div class="p-4">
-                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">OSCAR</h4>
-                        <p class="small text-muted">Proyecto Erasmus+ que promueve el desarrollo de habilidades digitales a través de experiencias de aprendizaje no convencionales en línea e híbridas para estudiantes de secundaria. Incluye coding camps sobre juegos serios y realidad extendida.</p>
-                        <a href="https://oscar-codingcamps.eu/es/" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           title="Web oficial del proyecto OSCAR"
-                           class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="project-card h-100">
-                    <div class="p-4">
-                        <i class="fa fa-shield fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">FAIR GAME</h4>
-                        <p class="small text-muted">Proyecto CERV (2026-2028) coordinado por el Instituto de Nuevas Tecnologías de la Imagen (INIT) de la UJI. Fomenta la concienciación, inclusión y resiliencia en entornos de juego para proteger los derechos y la salud mental de la infancia, abordando riesgos como el ciberacoso y las prácticas de monetización explotadoras.</p>
-                        <a href="https://www.uji.es/serveis/opei/historico/otros/fairgame/" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           title="Página del proyecto FAIR GAME en la UJI"
-                           class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="project-card h-100">
-                    <div class="p-4">
-                        <i class="fa fa-cubes fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">Inner Worlds</h4>
-                        <p class="small text-muted">Proyecto de innovación educativa que utiliza entornos inmersivos para el aprendizaje de habilidades transversales. Más información en su web oficial.</p>
-                        <a href="https://innerworlds.eu/" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           title="Web oficial del proyecto Inner Worlds"
-                           class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="project-card h-100">
-                    <div class="p-4">
-                        <i class="fa fa-heartbeat fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">Paciente3D</h4>
-                        <p class="small text-muted">Iniciativa enmarcada en el programa UJI>LAB Impuls de la UJI. Liderado por Inmaculada Remolar Quintana, tiene como objetivo mejorar la capacitación médica del estudiantado de Medicina mediante el desarrollo de un prototipo de realidad virtual que permite practicar la intubación orotraqueal, uno de los principales métodos para el manejo de las vías respiratorias.</p>
-                        <a href="https://www.linkedin.com/posts/init-institute-of-new-imaging-technologies-_paciente3d-ha-sido-recientemente-noticia-activity-7424737258051629058-na1Z/?originalSubdomain=es" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           title="Noticia sobre Paciente3D en LinkedIn"
-                           class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="project-card h-100">
-                    <div class="p-4">
-                        <i class="fa fa-rocket fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">Prometeo</h4>
-                        <p class="small text-muted">Proyecto de investigación en tecnologías inmersivas para la promoción de habilidades STEAM en jóvenes, financiado por la Unión Europea. Desarrolla entornos virtuales colaborativos y experiencias de aprendizaje interactivo.</p>
-                        <a href="https://prometeo-project.eu/" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           title="Web oficial del proyecto Prometeo"
-                           class="btn btn-sm btn-outline-primary rounded-pill mt-2">Más información</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
