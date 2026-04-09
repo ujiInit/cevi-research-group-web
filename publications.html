@@ -31,12 +31,21 @@ notitle: true
                             {% endif %}
                             , {{ pub.year }}
                         </p>
+                        {% if pub.abstract %}
+                            <p class="small mt-2">{{ pub.abstract }}</p>
+                        {% endif %}
                     </div>
                     <div class="col-md-3 text-md-end mt-2 mt-md-0">
-                        {% if pub.link %}
-                            <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary rounded-pill">
-                                <i class="fa fa-external-link"></i> Ver publicación
-                            </a>
+                        {% if pub.link and pub.link != "" %}
+                            {% if pub.link contains "doi.org" or pub.link contains "10." %}
+                                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="small text-primary">
+                                    <i class="fa fa-external-link"></i> DOI: {{ pub.link | split: '/' | last }}
+                                </a>
+                            {% else %}
+                                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="small text-primary">
+                                    <i class="fa fa-external-link"></i> Enlace
+                                </a>
+                            {% endif %}
                         {% endif %}
                     </div>
                 </div>
