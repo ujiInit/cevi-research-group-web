@@ -19,8 +19,8 @@ notitle: true
         {% assign pubs = site.data.publications | sort: 'year' | reverse %}
         {% for pub in pubs %}
             <div class="publication-item mb-4 p-3 border rounded shadow-sm" data-type="{{ pub.type }}">
-                <div class="row align-items-start">
-                    <div class="col-md-9">
+                <div class="row">
+                    <div class="col-12">
                         <h5 class="fw-bold">{{ pub.title }}</h5>
                         <p class="mb-1 text-muted">{{ pub.authors }}</p>
                         <p class="mb-1">
@@ -34,18 +34,17 @@ notitle: true
                         {% if pub.abstract %}
                             <p class="small mt-2">{{ pub.abstract }}</p>
                         {% endif %}
-                    </div>
-                    <div class="col-md-3 text-md-end mt-2 mt-md-0">
                         {% if pub.link and pub.link != "" %}
-                            {% if pub.link contains "doi.org" or pub.link contains "10." %}
-                                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="small text-primary">
-                                    <i class="fa fa-external-link"></i> DOI: {{ pub.link | split: '/' | last }}
+                            <p class="mt-2 mb-0">
+                                <i class="fa fa-external-link"></i>
+                                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="small">
+                                    {% if pub.link contains "doi.org" or pub.link contains "10." %}
+                                        DOI: {{ pub.link | replace: "https://doi.org/", "" }}
+                                    {% else %}
+                                        Enlace
+                                    {% endif %}
                                 </a>
-                            {% else %}
-                                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" class="small text-primary">
-                                    <i class="fa fa-external-link"></i> Enlace
-                                </a>
-                            {% endif %}
+                            </p>
                         {% endif %}
                     </div>
                 </div>
