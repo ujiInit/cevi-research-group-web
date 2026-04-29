@@ -2,7 +2,7 @@
 # Ordenados por categoría y luego por nombre
 
 - name: "Inmaculada Remolar Quintana"
-  role: "Dirección / Catedrática"
+  role: "Dirección / Profesora Titular
   category: "direction"
   bio: "Visualización interactiva, Realidad Virtual, Juegos Serios"
   url: "https://www.uji.es/institucional/estructura/personal/?p_profesor=61904"
@@ -54,4 +54,10 @@
   role: "Personal de apoyo a la investigación"
   category: "support"
   url: "https://www.linkedin.com/in/cristian0x0/"
+  img: ""
+
+- name: "Elena Shliakhovchuk"
+  role: "Personal investigador doctor"
+  category: "doctor"
+  url: "https://www.linkedin.com/in/elena-shliakhovchuk/"
   img: ""
