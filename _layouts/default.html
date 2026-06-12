@@ -21,14 +21,13 @@
                 <div class="d-flex flex-column flex-md-row align-items-md-end mt-3 mt-md-0">
                     <!-- Menú de navegación sin ul/li para evitar warnings -->
                     <div class="nav nav-pills" role="list">
-                        {%- assign shorturl = page.url | replace:'.html','' | replace:'index','' -%}
+                        {%- assign shorturl = page.url | replace:'index.html','' | replace:'index','' | replace:'.html','' | replace:'//','/' -%}
                         {%- for item in site.navigation -%}
-                            {%- assign itemshorturl = item.link | replace:'.html','' -%}
+                            {%- assign itemshorturl = item.link | replace:'index.html','' | replace:'index','' | replace:'.html','' | replace:'//','/' -%}
                             {%- assign maybe-active = '' -%}
-                            {%- if item.title == 'Research' and page.layout == 'project' -%}
+                            {%- if itemshorturl == shorturl -%}
                                 {%- assign maybe-active = 'active' -%}
-                            {%- endif -%}
-                            {%- if itemshorturl == shorturl or is-research -%}
+                            {%- elsif page.layout == 'project' and (item.title == 'Research' or item.title == 'Investigación') -%}
                                 {%- assign maybe-active = 'active' -%}
                             {%- endif -%}
                             <div class="nav-item" role="listitem">
