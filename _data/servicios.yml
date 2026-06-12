@@ -10,7 +10,7 @@
 - icon: fa-wrench
   title: Asistencia técnica y préstamo de material
   description: Soporte técnico experto y préstamo de equipos para pruebas, demostraciones y proyectos, facilitando el uso de tecnologías interactivas sin barreras logísticas.
-- icon: fa-brain
+- icon: fa-cogs
   title: Desarrollo de tecnología BCI
   description: Investigación y desarrollo de interfaces cerebro-ordenador para experiencias inmersivas, accesibilidad y control avanzado de sistemas interactivos.
 - icon: fa-graduation-cap
@@ -22,7 +22,7 @@
 - icon: fa-book
   title: Escritura académica
   description: Apoyo en redacción académica, elaboración de artículos, informes y materiales científicos con rigor y estilo profesional.
-- icon: fa-vial
+- icon: fa-flask
   title: Realización de testeos
   description: Diseño y ejecución de pruebas para evaluar experiencias interactivas, usabilidad y calidad técnica en desarrollo XR y juegos.
 - icon: fa-cubes
