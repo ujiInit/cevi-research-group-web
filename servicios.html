@@ -1,0 +1,32 @@
+---
+layout: default
+title: Servicios
+notitle: true
+---
+
+<div class="container my-5">
+    <h1 class="page-title text-center mb-5">Servicios tecnológicos</h1>
+    
+    <div class="row g-5">
+        {% for service in site.data.servicios %}
+        <div class="col-md-4">
+            <div class="glass-card p-4 text-center h-100">
+                <i class="fa {{ service.icon }} fa-3x text-primary mb-3"></i>
+                <h3 class="h5 fw-bold">{{ service.title }}</h3>
+                <p class="text-muted">{{ service.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-5 pt-4">
+        <div class="col-lg-8 mx-auto">
+            <div class="bg-soft-blue p-4 rounded-4 text-center">
+                <h2 class="h4 fw-bold">¿Buscas una solución innovadora?</h2>
+                <p>En CEVI combinamos investigación de vanguardia con experiencia práctica para ofrecer soluciones en Realidad Extendida, Juegos Serios y Visualización 3D.</p>
+                <a href="mailto:remolar@uji.es" class="btn btn-primary rounded-pill px-4 py-2 mt-2">Solicitar información</a>
+                <p class="small text-muted mt-3">*Transferencia de tecnología bajo condiciones profesionales. Contacta con la Dra. Inmaculada Remolar.</p>
+            </div>
+        </div>
+    </div>
+</div>

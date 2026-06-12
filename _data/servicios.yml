@@ -1,0 +1,30 @@
+- icon: fa-cubes
+  title: Desarrollo de aplicaciones XR
+  description: Creación de experiencias de Realidad Virtual (RV) y Realidad Aumentada (RA) a medida para formación, simulación, marketing y patrimonio.
+- icon: fa-gamepad
+  title: Juegos serios personalizados
+  description: Diseño y desarrollo de videojuegos con propósito educativo, de salud o entrenamiento corporativo, integrando gamificación avanzada.
+- icon: fa-bar-chart
+  title: Consultoría y transferencia
+  description: Asesoramiento en tecnologías interactivas, evaluación de viabilidad, diseño de experiencias de usuario y apoyo en proyectos de I+D+i.
+- icon: fa-wrench
+  title: Asistencia técnica y préstamo de material
+  description: Soporte técnico experto y préstamo de equipos para pruebas, demostraciones y proyectos, facilitando el uso de tecnologías interactivas sin barreras logísticas.
+- icon: fa-brain
+  title: Desarrollo de tecnología BCI
+  description: Investigación y desarrollo de interfaces cerebro-ordenador para experiencias inmersivas, accesibilidad y control avanzado de sistemas interactivos.
+- icon: fa-graduation-cap
+  title: Formación en tecnología XR, juegos y 3D
+  description: Cursos y talleres especializados en Realidad Extendida, desarrollo de juegos serios y modelado/visualización 3D para equipos, estudiantes y empresas.
+- icon: fa-users
+  title: Concienciación, inclusión y resiliencia en entornos de juego
+  description: Fomenta la concienciación, inclusión y resiliencia en entornos de juego para proteger los derechos y la salud mental.
+- icon: fa-book
+  title: Escritura académica
+  description: Apoyo en redacción académica, elaboración de artículos, informes y materiales científicos con rigor y estilo profesional.
+- icon: fa-vial
+  title: Realización de testeos
+  description: Diseño y ejecución de pruebas para evaluar experiencias interactivas, usabilidad y calidad técnica en desarrollo XR y juegos.
+- icon: fa-cubes
+  title: Gráficos y visualización 3D
+  description: Desarrollo de soluciones de visualización 3D y gráficos avanzados para análisis, simulación y presentaciones interactivas.
